@@ -1,0 +1,10 @@
+Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+Component,Type of submitted information.,,,,TRUE,,,,
+Genes,A gene in entrez,,"Component, EntrezId",EntrezId,,,,,
+EntrezId,gene entrez id,,,,TRUE,,,,int::inRange 0 10000000000 error
+Samples,A patients specific sample,,"Component, SampleName",SampleName,,,,,
+SampleName,The name of a sample,,,,TRUE,,,,str
+GenesToSamples,gene to sample relationship,,"Component, BulkRNAExpression",BulkRNAExpression,,,"Genes, Samples",,
+BulkRNAExpression,Bulk RNA expression value,,,,,,,,num::inRange 0 10000000000 error
+EntrezId,,,,,,,,,matchAtLeastOne Genes.EntrezId set error
+SampleName,,,,,,,,,matchAtLeastOne Samples.SampleName set error
