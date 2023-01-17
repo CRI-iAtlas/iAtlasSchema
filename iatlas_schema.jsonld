@@ -2028,7 +2028,8 @@
             "sms:displayName": "EntrezId",
             "sms:required": "sms:true",
             "sms:validationRules": [
-                "matchAtLeastOne Genes.EntrezId set error"
+                "int",
+                "inRange 0 10000000000 error"
             ]
         },
         {
@@ -2044,33 +2045,35 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Samples",
+            "sms:displayName": "samples",
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:sampleName"
+                    "@id": "bts:SampleName"
                 }
             ],
             "sms:validationRules": []
         },
         {
-            "@id": "bts:sampleName",
-            "@type": "rdf:Property",
+            "@id": "bts:SampleName",
+            "@type": "rdfs:Class",
             "rdfs:comment": "The name of a sample",
-            "rdfs:label": "sampleName",
-            "schema:domainIncludes": {
-                "@id": "bts:Samples"
-            },
+            "rdfs:label": "SampleName",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "SampleName",
+            "sms:displayName": "sample_name",
             "sms:required": "sms:true",
             "sms:validationRules": [
-                "matchAtLeastOne Samples.SampleName set error"
+                "str"
             ]
         },
         {
@@ -2102,6 +2105,12 @@
                 },
                 {
                     "@id": "bts:bulkRNAExpression"
+                },
+                {
+                    "@id": "bts:GenesEntrezId"
+                },
+                {
+                    "@id": "bts:SamplesSampleName"
                 }
             ],
             "sms:validationRules": []
@@ -2123,6 +2132,59 @@
                 "num",
                 "inRange 0 10000000000 error"
             ]
+        },
+        {
+            "@id": "bts:GenesEntrezId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "GenesEntrezId",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "GenesEntrezId",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne Genes.EntrezId set error"
+            ]
+        },
+        {
+            "@id": "bts:SamplesSampleName",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SamplesSampleName",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "SamplesSampleName",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne samples.sample_name set error"
+            ]
+        },
+        {
+            "@id": "bts:sampleName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "sampleName",
+            "schema:domainIncludes": {
+                "@id": "bts:Samples"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "SampleName",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         }
     ],
     "@id": "http://schema.biothings.io/#0.1"
