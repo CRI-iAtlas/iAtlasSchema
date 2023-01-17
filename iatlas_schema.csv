@@ -1,10 +1,10 @@
 Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
 Component,Type of submitted information.,,,,TRUE,,,,
-Genes,A gene in entrez,,"Component, EntrezId",EntrezId,,,,,
-EntrezId,gene entrez id,,,,TRUE,,,,int::inRange 0 10000000000 error
-samples,A patients specific sample,,"Component, sample_name",SampleName,,,,,
+genes,A gene in entrez,,"Component, entrez_id",entrez_id,,,,,
+entrez,gene entrez id,,,,TRUE,,,,int::inRange 0 10000000000 error
+samples,A patients specific sample,,"Component, sample_name",sample_name,,,,,
 sample_name,The name of a sample,,,,TRUE,,,,str
-GenesToSamples,gene to sample relationship,,"Component, BulkRNAExpression, GenesEntrezId, SamplesSampleName",BulkRNAExpression,,,"Genes, samples",,
-BulkRNAExpression,Bulk RNA expression value,,,,,,,,num::inRange 0 10000000000 error
-GenesEntrezId,,,,,TRUE,,,,matchAtLeastOne Genes.EntrezId set error
-SamplesSampleName,,,,,TRUE,,,,matchAtLeastOne samples.sample_name set error
+genes_to_samples,gene to sample relationship,,"Component, bulk_rna_expression,  genes_entrez_id,  samples_sample_name",bulk_rna_expression,,,"genes, samples",,
+bulk_rna_expression,Bulk RNA expression value,,,,,,,,num::inRange 0 10000000000 error
+genes_entrez_id,,,,,TRUE,,,,matchAtLeastOne genes.entrez_id set error
+samples_sample_name,,,,,TRUE,,,,matchAtLeastOne samples.sample_name set error

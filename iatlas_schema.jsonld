@@ -2002,7 +2002,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Genes",
+            "sms:displayName": "genes",
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
@@ -2015,17 +2015,19 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:entrezId",
-            "@type": "rdf:Property",
+            "@id": "bts:Entrez",
+            "@type": "rdfs:Class",
             "rdfs:comment": "gene entrez id",
-            "rdfs:label": "entrezId",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "rdfs:label": "Entrez",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "EntrezId",
+            "sms:displayName": "entrez",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "int",
@@ -2052,21 +2054,19 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:SampleName"
+                    "@id": "bts:sampleName"
                 }
             ],
             "sms:validationRules": []
         },
         {
-            "@id": "bts:SampleName",
-            "@type": "rdfs:Class",
+            "@id": "bts:sampleName",
+            "@type": "rdf:Property",
             "rdfs:comment": "The name of a sample",
-            "rdfs:label": "SampleName",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "sampleName",
+            "schema:domainIncludes": {
+                "@id": "bts:Samples"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2089,7 +2089,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "GenesToSamples",
+            "sms:displayName": "genes_to_samples",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -2104,7 +2104,7 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:bulkRNAExpression"
+                    "@id": "bts:bulkRnaExpression"
                 },
                 {
                     "@id": "bts:GenesEntrezId"
@@ -2116,17 +2116,17 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:bulkRNAExpression",
+            "@id": "bts:bulkRnaExpression",
             "@type": "rdf:Property",
             "rdfs:comment": "Bulk RNA expression value",
-            "rdfs:label": "bulkRNAExpression",
+            "rdfs:label": "bulkRnaExpression",
             "schema:domainIncludes": {
                 "@id": "bts:GenesToSamples"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "BulkRNAExpression",
+            "sms:displayName": "bulk_rna_expression",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num",
@@ -2146,10 +2146,10 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "GenesEntrezId",
+            "sms:displayName": "genes_entrez_id",
             "sms:required": "sms:true",
             "sms:validationRules": [
-                "matchAtLeastOne Genes.EntrezId set error"
+                "matchAtLeastOne genes.entrez_id set error"
             ]
         },
         {
@@ -2165,24 +2165,24 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "SamplesSampleName",
+            "sms:displayName": "samples_sample_name",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne samples.sample_name set error"
             ]
         },
         {
-            "@id": "bts:sampleName",
+            "@id": "bts:entrezId",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "sampleName",
+            "rdfs:label": "entrezId",
             "schema:domainIncludes": {
-                "@id": "bts:Samples"
+                "@id": "bts:Genes"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "SampleName",
+            "sms:displayName": "entrez_id",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }
