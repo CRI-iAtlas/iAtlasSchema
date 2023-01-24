@@ -4,7 +4,7 @@ genes,A gene in entrez,,"Component, entrez",entrez,,,,,
 entrez,gene entrez id,,,,TRUE,,,,int::inRange 0 10000000000 error
 samples,A patients specific sample,,"Component, sample_name",sample_name,,,,,
 sample_name,The name of a sample,,,,TRUE,,,,str
-genes_to_samples,gene to sample relationship,,"Component, bulk_rna_expression,  genes_entrez_id,  samples_sample_name",bulk_rna_expression,,,"genes, samples",,
+genes_to_samples,gene to sample relationship,,"Component, bulk_rna_expression,  gts_entrez,  gts_sample_name",bulk_rna_expression,,,"genes, samples",,
 bulk_rna_expression,Bulk RNA expression value,,,,,,,,num::inRange 0 10000000000 error
 gts_entrez,,,,,TRUE,,,,matchAtLeastOne genes.entrez set error
 gts_sample_name,,,,,TRUE,,,,matchAtLeastOne samples.sample_name set error
