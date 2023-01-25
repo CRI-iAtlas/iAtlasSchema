@@ -2219,10 +2219,10 @@
             ]
         },
         {
-            "@id": "bts:Samples",
+            "@id": "bts:Sample",
             "@type": "rdfs:Class",
             "rdfs:comment": "A patients specific sample",
-            "rdfs:label": "Samples",
+            "rdfs:label": "Sample",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2231,7 +2231,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "samples",
+            "sms:displayName": "sample",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -2257,7 +2257,7 @@
             "rdfs:comment": "The name of a sample",
             "rdfs:label": "sampleName",
             "schema:domainIncludes": {
-                "@id": "bts:Samples"
+                "@id": "bts:Sample"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2274,7 +2274,7 @@
             "rdfs:comment": "The id of the patient the sample belongs to",
             "rdfs:label": "samplePatientId",
             "schema:domainIncludes": {
-                "@id": "bts:Samples"
+                "@id": "bts:Sample"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2543,23 +2543,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "american indian or alaska native",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Sample",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Sample",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "sample",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }
