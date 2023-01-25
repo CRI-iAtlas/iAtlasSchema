@@ -2027,22 +2027,22 @@
                     "@id": "bts:patientName"
                 },
                 {
-                    "@id": "bts:AgeAtDiagnosis"
+                    "@id": "bts:ageAtDiagnosis"
                 },
                 {
-                    "@id": "bts:Ethnicity"
+                    "@id": "bts:ethnicity"
                 },
                 {
-                    "@id": "bts:Gender"
+                    "@id": "bts:gender"
                 },
                 {
-                    "@id": "bts:Height"
+                    "@id": "bts:height"
                 },
                 {
-                    "@id": "bts:Race"
+                    "@id": "bts:race"
                 },
                 {
-                    "@id": "bts:Weight"
+                    "@id": "bts:weight"
                 }
             ],
             "sms:validationRules": []
@@ -2065,15 +2065,13 @@
             ]
         },
         {
-            "@id": "bts:AgeAtDiagnosis",
-            "@type": "rdfs:Class",
+            "@id": "bts:ageAtDiagnosis",
+            "@type": "rdf:Property",
             "rdfs:comment": "The age of the patient at diagnosis",
-            "rdfs:label": "AgeAtDiagnosis",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "ageAtDiagnosis",
+            "schema:domainIncludes": {
+                "@id": "bts:Patients"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2085,15 +2083,13 @@
             ]
         },
         {
-            "@id": "bts:Ethnicity",
-            "@type": "rdfs:Class",
+            "@id": "bts:ethnicity",
+            "@type": "rdf:Property",
             "rdfs:comment": "The ethnicity of the patient",
-            "rdfs:label": "Ethnicity",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "ethnicity",
+            "schema:domainIncludes": {
+                "@id": "bts:Patients"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2112,15 +2108,13 @@
             ]
         },
         {
-            "@id": "bts:Gender",
-            "@type": "rdfs:Class",
+            "@id": "bts:gender",
+            "@type": "rdf:Property",
             "rdfs:comment": "The gender of the patient",
-            "rdfs:label": "Gender",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "gender",
+            "schema:domainIncludes": {
+                "@id": "bts:Patients"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2139,15 +2133,13 @@
             ]
         },
         {
-            "@id": "bts:Height",
-            "@type": "rdfs:Class",
+            "@id": "bts:height",
+            "@type": "rdf:Property",
             "rdfs:comment": "The height of the patient",
-            "rdfs:label": "Height",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "height",
+            "schema:domainIncludes": {
+                "@id": "bts:Patients"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2159,33 +2151,31 @@
             ]
         },
         {
-            "@id": "bts:Race",
-            "@type": "rdfs:Class",
+            "@id": "bts:race",
+            "@type": "rdf:Property",
             "rdfs:comment": "The race of the patient",
-            "rdfs:label": "Race",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "race",
+            "schema:domainIncludes": {
+                "@id": "bts:Patients"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:“white”"
+                    "@id": "bts:White"
                 },
                 {
-                    "@id": "bts:“blackorafricanamerican”"
+                    "@id": "bts:Blackorafricanamerican"
                 },
                 {
-                    "@id": "bts:“asian”"
+                    "@id": "bts:Asian"
                 },
                 {
-                    "@id": "bts:“nativehawaiianorotherpacificislander”"
+                    "@id": "bts:Nativehawaiianorotherpacificislander"
                 },
                 {
-                    "@id": "bts:“americanindianoralaskanative\""
+                    "@id": "bts:Americanindianoralaskanative"
                 }
             ],
             "sms:displayName": "race",
@@ -2195,15 +2185,13 @@
             ]
         },
         {
-            "@id": "bts:Weight",
-            "@type": "rdfs:Class",
+            "@id": "bts:weight",
+            "@type": "rdf:Property",
             "rdfs:comment": "The weight of the patient",
-            "rdfs:label": "Weight",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "weight",
+            "schema:domainIncludes": {
+                "@id": "bts:Patients"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2242,7 +2230,7 @@
                     "@id": "bts:sampleName"
                 },
                 {
-                    "@id": "bts:SamplePatientId"
+                    "@id": "bts:samplePatientId"
                 }
             ],
             "sms:validationRules": []
@@ -2265,15 +2253,13 @@
             ]
         },
         {
-            "@id": "bts:SamplePatientId",
-            "@type": "rdfs:Class",
+            "@id": "bts:samplePatientId",
+            "@type": "rdf:Property",
             "rdfs:comment": "The id of the patient the sample belongs to",
-            "rdfs:label": "SamplePatientId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "samplePatientId",
+            "schema:domainIncludes": {
+                "@id": "bts:Samples"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2342,10 +2328,10 @@
                     "@id": "bts:bulkRnaExpression"
                 },
                 {
-                    "@id": "bts:GenesToSamplesGeneId"
+                    "@id": "bts:genesToSamplesGeneId"
                 },
                 {
-                    "@id": "bts:GenesToSamplesSampleId"
+                    "@id": "bts:genesToSamplesSampleId"
                 }
             ],
             "sms:validationRules": []
@@ -2369,15 +2355,13 @@
             ]
         },
         {
-            "@id": "bts:GenesToSamplesGeneId",
-            "@type": "rdfs:Class",
+            "@id": "bts:genesToSamplesGeneId",
+            "@type": "rdf:Property",
             "rdfs:comment": "The id of the gene",
-            "rdfs:label": "GenesToSamplesGeneId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "genesToSamplesGeneId",
+            "schema:domainIncludes": {
+                "@id": "bts:GenesToSamples"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2388,15 +2372,13 @@
             ]
         },
         {
-            "@id": "bts:GenesToSamplesSampleId",
-            "@type": "rdfs:Class",
+            "@id": "bts:genesToSamplesSampleId",
+            "@type": "rdf:Property",
             "rdfs:comment": "The id of the sample",
-            "rdfs:label": "GenesToSamplesSampleId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "genesToSamplesSampleId",
+            "schema:domainIncludes": {
+                "@id": "bts:GenesToSamples"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2413,7 +2395,7 @@
             "rdfs:label": "Nothispanicorlatino",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Ethnicity"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2430,7 +2412,7 @@
             "rdfs:label": "Hispanicorlatino",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Ethnicity"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2447,7 +2429,7 @@
             "rdfs:label": "Female",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Gender"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2464,7 +2446,7 @@
             "rdfs:label": "Male",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Gender"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2475,87 +2457,87 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:“white”",
+            "@id": "bts:White",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "“white”",
+            "rdfs:label": "White",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Race"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "“white”",
+            "sms:displayName": "white",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:“blackorafricanamerican”",
+            "@id": "bts:Blackorafricanamerican",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "“blackorafricanamerican”",
+            "rdfs:label": "Blackorafricanamerican",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Race"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "“black or african american”",
+            "sms:displayName": "black or african american",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:“asian”",
+            "@id": "bts:Asian",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "“asian”",
+            "rdfs:label": "Asian",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Race"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "“asian”",
+            "sms:displayName": "asian",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:“nativehawaiianorotherpacificislander”",
+            "@id": "bts:Nativehawaiianorotherpacificislander",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "“nativehawaiianorotherpacificislander”",
+            "rdfs:label": "Nativehawaiianorotherpacificislander",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Race"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "“native hawaiian or other pacific islander”",
+            "sms:displayName": "native hawaiian or other pacific islander",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:“americanindianoralaskanative\"",
+            "@id": "bts:Americanindianoralaskanative",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "“americanindianoralaskanative\"",
+            "rdfs:label": "Americanindianoralaskanative",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Race"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "“american indian or alaska native\"",
+            "sms:displayName": "american indian or alaska native",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }

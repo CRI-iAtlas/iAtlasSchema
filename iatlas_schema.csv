@@ -1,20 +1,20 @@
 Attribute,DependsOn Component,DependsOn,Properties,Required,Validation Rules,Description,Parent,Source,Valid Values
 Component,,,,TRUE,,Type of submitted information.,,,
-patients,,"Component, patient_name, age_at_diagnosis, ethnicity, gender, height, race, weight ",patient_name,,,A patient,,,
+patients,,"Component, patient_name, age_at_diagnosis, ethnicity, gender, height, race, weight ","patient_name, age_at_diagnosis, ethnicity, gender, height, race, weight ",,,A patient,,,
 patient_name,,,,TRUE,str,The name of a patient,,,
 age_at_diagnosis,,,,,int::inRange 0 200 error ,The age of the patient at diagnosis,,,
-ethnicity,,,,,str,The ethnicity of the patient,,,"""not hispanic or latino"", ""hispanic or latino"""
-gender,,,,,str,The gender of the patient,,,"""female"", ""male"""
+ethnicity,,,,,str,The ethnicity of the patient,,,"not hispanic or latino, hispanic or latino"
+gender,,,,,str,The gender of the patient,,,"female, male"
 height,,,,,num::inRange 0 400 error ,The height of the patient,,,
-race,,,,,str,The race of the patient,,,"“white”, “black or african american”, “asian”, “native hawaiian or other pacific islander”, “american indian or alaska native"""
+race,,,,,str,The race of the patient,,,"white, black or african american, asian, native hawaiian or other pacific islander, american indian or alaska native"
 weight,,,,,num::inRange 0 600 error  ,The weight of the patient,,,
-samples,patients,"Component, sample_name, sample_patient_id",sample_name,,,A patients specific sample,,,
+samples,patients,"Component, sample_name, sample_patient_id","sample_name, sample_patient_id",,,A patients specific sample,,,
 sample_name,,,,TRUE,str,The name of a sample,,,
 sample_patient_id,,,,TRUE,matchAtLeastOne patients.patient_id set error,The id of the patient the sample belongs to,,,
 genes,,"Component, entrez, hgnc","entrez, hgnc",,,A gene,,,
 entrez,,,,TRUE,int::inRange 0 10000000000 error,gene entrez id,,,
 hgnc,,,,,str,gene hgnc name,,,
-genes_to_samples,"genes, samples","Component, bulk_rna_expression, genes_to_samples_gene_id,  genes_to_samples_sample_id",bulk_rna_expression,,,gene to sample relationship,,,
+genes_to_samples,"genes, samples","Component, bulk_rna_expression, genes_to_samples_gene_id,  genes_to_samples_sample_id","bulk_rna_expression, genes_to_samples_gene_id,  genes_to_samples_sample_id",,,gene to sample relationship,,,
 bulk_rna_expression,,,,,num::inRange 0 10000000000 error,Bulk RNA expression value,,,
 genes_to_samples_gene_id,,,,TRUE,matchAtLeastOne genes.gene_id set error,The id of the gene,,,
 genes_to_samples_sample_id,,,,TRUE,matchAtLeastOne samples.sample_id set error,The id of the sample,,,
