@@ -1,10 +1,11 @@
-Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
-Component,Type of submitted information.,,,,TRUE,,,,
-genes,A gene in entrez,,"Component, entrez",entrez,,,,,
-entrez,gene entrez id,,,,TRUE,,,,int::inRange 0 10000000000 error
-samples,A patients specific sample,,"Component, sample_name",sample_name,,,,,
-sample_name,The name of a sample,,,,TRUE,,,,str
-genes_to_samples,gene to sample relationship,,"Component, bulk_rna_expression,  gts_entrez,  gts_sample_name",bulk_rna_expression,,,"genes, samples",,
-bulk_rna_expression,Bulk RNA expression value,,,,,,,,num::inRange 0 10000000000 error
-gts_entrez,,,,,TRUE,,,,matchAtLeastOne genes.entrez set error
-gts_sample_name,,,,,TRUE,,,,matchAtLeastOne samples.sample_name set error
+Attribute,DependsOn Component,DependsOn,Properties,Required,Validation Rules,Valid Values,Description,Parent,Source
+Component,,,,TRUE,,,Type of submitted information.,,
+genes,,"Component, entrez, hgnc","entrez, hgnc",,,,A gene in entrez,,
+entrez,,,,TRUE,int::inRange 0 10000000000 error,,gene entrez id,,
+hgnc,,,,,str,,gene hgnc name,,
+samples,,"Component, sample_name",sample_name,,,,A patients specific sample,,
+sample_name,,,,TRUE,str,,The name of a sample,,
+genes_to_samples,"genes, samples","Component, bulk_rna_expression,  gts_entrez,  gts_sample_name",bulk_rna_expression,,,,gene to sample relationship,,
+bulk_rna_expression,,,,,num::inRange 0 10000000000 error,,Bulk RNA expression value,,
+gts_entrez,,,,TRUE,matchAtLeastOne genes.entrez set error,,,,
+gts_sample_name,,,,TRUE,matchAtLeastOne samples.sample_name set error,,,,

@@ -891,7 +891,7 @@
         {
             "@id": "bts:hgnc",
             "@type": "rdf:Property",
-            "rdfs:comment": "HGNC ID for gene",
+            "rdfs:comment": "gene hgnc name",
             "rdfs:label": "hgnc",
             "schema:domainIncludes": {
                 "@id": "bts:Gene"
@@ -899,9 +899,16 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "schema:rangeIncludes": {
-                "@id": "schema:Integer"
-            }
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Integer"
+                }
+            ],
+            "sms:displayName": "hgnc",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
         },
         {
             "@id": "bts:entrez",
@@ -2018,6 +2025,9 @@
                 },
                 {
                     "@id": "bts:entrez"
+                },
+                {
+                    "@id": "bts:hgnc"
                 }
             ],
             "sms:validationRules": []
