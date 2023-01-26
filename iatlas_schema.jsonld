@@ -2389,6 +2389,9 @@
                 },
                 {
                     "@id": "bts:featureToSampleSampleId"
+                },
+                {
+                    "@id": "bts:featureValue"
                 }
             ],
             "sms:validationRules": []
@@ -2428,15 +2431,13 @@
             ]
         },
         {
-            "@id": "bts:FeatureValue",
-            "@type": "rdfs:Class",
+            "@id": "bts:featureValue",
+            "@type": "rdf:Property",
             "rdfs:comment": "The value of the feature for the sample",
-            "rdfs:label": "FeatureValue",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "featureValue",
+            "schema:domainIncludes": {
+                "@id": "bts:FeatureToSample"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
