@@ -891,7 +891,7 @@
         {
             "@id": "bts:hgnc",
             "@type": "rdf:Property",
-            "rdfs:comment": "HGNC ID for gene",
+            "rdfs:comment": "gene hgnc name",
             "rdfs:label": "hgnc",
             "schema:domainIncludes": {
                 "@id": "bts:Gene"
@@ -899,14 +899,21 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "schema:rangeIncludes": {
-                "@id": "schema:Integer"
-            }
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Integer"
+                }
+            ],
+            "sms:displayName": "hgnc",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
         },
         {
             "@id": "bts:entrez",
             "@type": "rdf:Property",
-            "rdfs:comment": "Entrez ID for gene",
+            "rdfs:comment": "gene entrez id",
             "rdfs:label": "entrez",
             "schema:domainIncludes": {
                 "@id": "bts:Gene"
@@ -914,9 +921,17 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "schema:rangeIncludes": {
-                "@id": "schema:Integer"
-            }
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Integer"
+                }
+            ],
+            "sms:displayName": "entrez",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "int",
+                "inRange 0 10000000000 error"
+            ]
         },
         {
             "@id": "bts:refseq",
@@ -2252,6 +2267,125 @@
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne patients.patient_id set error"
+            ]
+        },
+        {
+            "@id": "bts:Genes",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A gene",
+            "rdfs:label": "Genes",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "genes",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:entrez"
+                },
+                {
+                    "@id": "bts:hgnc"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:GeneToSample",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "gene to sample relationship",
+            "rdfs:label": "GeneToSample",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_to_sample",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Genes"
+                },
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:bulkRnaExpression"
+                },
+                {
+                    "@id": "bts:geneToSampleGeneId"
+                },
+                {
+                    "@id": "bts:geneToSampleSampleId"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:bulkRnaExpression",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Bulk RNA expression value",
+            "rdfs:label": "bulkRnaExpression",
+            "schema:domainIncludes": {
+                "@id": "bts:GeneToSample"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "bulk_rna_expression",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "num",
+                "inRange 0 10000000000 error"
+            ]
+        },
+        {
+            "@id": "bts:geneToSampleGeneId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The id of the gene",
+            "rdfs:label": "geneToSampleGeneId",
+            "schema:domainIncludes": {
+                "@id": "bts:GeneToSample"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_to_sample_gene_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne genes.gene_id set error"
+            ]
+        },
+        {
+            "@id": "bts:geneToSampleSampleId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The id of the sample",
+            "rdfs:label": "geneToSampleSampleId",
+            "schema:domainIncludes": {
+                "@id": "bts:GeneToSample"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_to_sample_sample_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne sample.sample_id set error"
             ]
         },
         {
