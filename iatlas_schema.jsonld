@@ -2385,24 +2385,22 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:FeatureToSampleFeatureId"
+                    "@id": "bts:featureToSampleFeatureId"
                 },
                 {
-                    "@id": "bts:FeatureToSampleSampleId"
+                    "@id": "bts:featureToSampleSampleId"
                 }
             ],
             "sms:validationRules": []
         },
         {
-            "@id": "bts:FeatureToSampleFeatureId",
-            "@type": "rdfs:Class",
+            "@id": "bts:featureToSampleFeatureId",
+            "@type": "rdf:Property",
             "rdfs:comment": "The id of the feature",
-            "rdfs:label": "FeatureToSampleFeatureId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "featureToSampleFeatureId",
+            "schema:domainIncludes": {
+                "@id": "bts:FeatureToSample"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2413,15 +2411,13 @@
             ]
         },
         {
-            "@id": "bts:FeatureToSampleSampleId",
-            "@type": "rdfs:Class",
+            "@id": "bts:featureToSampleSampleId",
+            "@type": "rdf:Property",
             "rdfs:comment": "The id of the sample",
-            "rdfs:label": "FeatureToSampleSampleId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "featureToSampleSampleId",
+            "schema:domainIncludes": {
+                "@id": "bts:FeatureToSample"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
