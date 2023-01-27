@@ -2192,6 +2192,104 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:GeneSets",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A set of genes",
+            "rdfs:label": "GeneSets",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_sets",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:geneSetName"
+                },
+                {
+                    "@id": "bts:geneSetDisplay"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:geneSetName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "geneSetName",
+            "schema:domainIncludes": {
+                "@id": "bts:GeneSets"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_set_name",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:geneSetDisplay",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "geneSetDisplay",
+            "schema:domainIncludes": {
+                "@id": "bts:GeneSets"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_set_display",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:GenesToGeneSets",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Gene  and gene set relationship",
+            "rdfs:label": "GenesToGeneSets",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "genes_to_gene_sets",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Genesx"
+                },
+                {
+                    "@id": "bts:GeneSets"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:genesId"
+                },
+                {
+                    "@id": "bts:geneSetsId"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:GenesToSamples",
             "@type": "rdfs:Class",
             "rdfs:comment": "gene to sample relationship",
@@ -2651,6 +2749,23 @@
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne genesx.id set error"
+            ]
+        },
+        {
+            "@id": "bts:geneSetsId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "geneSetsId",
+            "schema:domainIncludes": {
+                "@id": "bts:GenesToGeneSets"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_sets_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne gene_sets.id set error"
             ]
         },
         {
