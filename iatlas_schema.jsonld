@@ -2141,25 +2141,23 @@
                     "@id": "bts:samplesId"
                 },
                 {
-                    "@id": "bts:featuresToSamplesValue"
+                    "@id": "bts:featureToSampleValue"
                 }
             ],
             "sms:validationRules": []
         },
         {
-            "@id": "bts:FeaturesToSamplesValue",
-            "@type": "rdfs:Class",
+            "@id": "bts:featureToSampleValue",
+            "@type": "rdf:Property",
             "rdfs:comment": "The value of the feature for the sample",
-            "rdfs:label": "FeaturesToSamplesValue",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "featureToSampleValue",
+            "schema:domainIncludes": {
+                "@id": "bts:FeaturesToSamples"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "features_to_samples_value",
+            "sms:displayName": "feature_to_sample_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num"
@@ -2565,21 +2563,6 @@
             "sms:validationRules": [
                 "matchAtLeastOne samples.id set error"
             ]
-        },
-        {
-            "@id": "bts:featuresToSamplesValue",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "featuresToSamplesValue",
-            "schema:domainIncludes": {
-                "@id": "bts:FeaturesToSamples"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "features_to_samples _value",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
         },
         {
             "@id": "bts:Nothispanicorlatino",
