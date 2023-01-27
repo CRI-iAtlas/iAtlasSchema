@@ -2466,21 +2466,31 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:"
+                    "@id": "bts:pubmedId"
+                },
+                {
+                    "@id": "bts:journal"
+                },
+                {
+                    "@id": "bts:firstAuthorLastName"
+                },
+                {
+                    "@id": "bts:publicationYear"
+                },
+                {
+                    "@id": "bts:publicationTitle"
                 }
             ],
             "sms:validationRules": []
         },
         {
-            "@id": "bts:PubmedId",
-            "@type": "rdfs:Class",
+            "@id": "bts:pubmedId",
+            "@type": "rdf:Property",
             "rdfs:comment": "The pubmed id",
-            "rdfs:label": "PubmedId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "pubmedId",
+            "schema:domainIncludes": {
+                "@id": "bts:Publications"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2491,15 +2501,13 @@
             ]
         },
         {
-            "@id": "bts:Journal",
-            "@type": "rdfs:Class",
+            "@id": "bts:journal",
+            "@type": "rdf:Property",
             "rdfs:comment": "The Jorunal name",
-            "rdfs:label": "Journal",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "journal",
+            "schema:domainIncludes": {
+                "@id": "bts:Publications"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2510,15 +2518,13 @@
             ]
         },
         {
-            "@id": "bts:FirstAuthorLastName",
-            "@type": "rdfs:Class",
+            "@id": "bts:firstAuthorLastName",
+            "@type": "rdf:Property",
             "rdfs:comment": "The first authors last name",
-            "rdfs:label": "FirstAuthorLastName",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "firstAuthorLastName",
+            "schema:domainIncludes": {
+                "@id": "bts:Publications"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2529,15 +2535,13 @@
             ]
         },
         {
-            "@id": "bts:PublicationYear",
-            "@type": "rdfs:Class",
+            "@id": "bts:publicationYear",
+            "@type": "rdf:Property",
             "rdfs:comment": "The year published",
-            "rdfs:label": "PublicationYear",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "publicationYear",
+            "schema:domainIncludes": {
+                "@id": "bts:Publications"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2549,15 +2553,13 @@
             ]
         },
         {
-            "@id": "bts:PublicationTitle",
-            "@type": "rdfs:Class",
+            "@id": "bts:publicationTitle",
+            "@type": "rdf:Property",
             "rdfs:comment": "The title of the publication",
-            "rdfs:label": "PublicationTitle",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "publicationTitle",
+            "schema:domainIncludes": {
+                "@id": "bts:Publications"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2835,23 +2837,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "american indian or alaska native",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Publications"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }
