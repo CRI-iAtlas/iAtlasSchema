@@ -2668,6 +2668,48 @@
             ]
         },
         {
+            "@id": "bts:PublicationsToGenesToGeneSets",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "PublicationsToGenesToGeneSets",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "publications_to_genes_to_gene_sets",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Genesx"
+                },
+                {
+                    "@id": "bts:GeneSets"
+                },
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:genesId"
+                },
+                {
+                    "@id": "bts:geneSetsId"
+                },
+                {
+                    "@id": "bts:publicationsId"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:Samples",
             "@type": "rdfs:Class",
             "rdfs:comment": "A patients specific sample",
@@ -2740,7 +2782,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "genesId",
             "schema:domainIncludes": {
-                "@id": "bts:GenesToSamples"
+                "@id": "bts:PublicationsToGenesToGeneSets"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2757,7 +2799,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "geneSetsId",
             "schema:domainIncludes": {
-                "@id": "bts:GenesToGeneSets"
+                "@id": "bts:PublicationsToGenesToGeneSets"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2783,6 +2825,23 @@
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne patients.id set error"
+            ]
+        },
+        {
+            "@id": "bts:publicationsId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "publicationsId",
+            "schema:domainIncludes": {
+                "@id": "bts:PublicationsToGenesToGeneSets"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "publications_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne publications.id set error"
             ]
         },
         {
