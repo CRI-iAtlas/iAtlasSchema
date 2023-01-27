@@ -891,7 +891,7 @@
         {
             "@id": "bts:hgnc",
             "@type": "rdf:Property",
-            "rdfs:comment": "HGNC ID for gene",
+            "rdfs:comment": "gene hgnc name",
             "rdfs:label": "hgnc",
             "schema:domainIncludes": {
                 "@id": "bts:Gene"
@@ -899,14 +899,21 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "schema:rangeIncludes": {
-                "@id": "schema:Integer"
-            }
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Integer"
+                }
+            ],
+            "sms:displayName": "hgnc",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
         },
         {
             "@id": "bts:entrez",
             "@type": "rdf:Property",
-            "rdfs:comment": "Entrez ID for gene",
+            "rdfs:comment": "gene entrez id",
             "rdfs:label": "entrez",
             "schema:domainIncludes": {
                 "@id": "bts:Gene"
@@ -914,9 +921,17 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "schema:rangeIncludes": {
-                "@id": "schema:Integer"
-            }
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Integer"
+                }
+            ],
+            "sms:displayName": "entrez",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "int",
+                "inRange 0 10000000000 error"
+            ]
         },
         {
             "@id": "bts:refseq",
@@ -1990,10 +2005,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Patient",
+            "@id": "bts:Features",
             "@type": "rdfs:Class",
-            "rdfs:comment": "A patient",
-            "rdfs:label": "Patient",
+            "rdfs:comment": "A result of an assay with a numeric result",
+            "rdfs:label": "Features",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2002,7 +2017,251 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "patient",
+            "sms:displayName": "features",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:featureName"
+                },
+                {
+                    "@id": "bts:featureDisplay"
+                },
+                {
+                    "@id": "bts:order"
+                },
+                {
+                    "@id": "bts:unit"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:featureName",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The name of the feature",
+            "rdfs:label": "featureName",
+            "schema:domainIncludes": {
+                "@id": "bts:Features"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "feature_name",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:featureDisplay",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The display name of the feature",
+            "rdfs:label": "featureDisplay",
+            "schema:domainIncludes": {
+                "@id": "bts:Features"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "feature_display",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:order",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The order used to display the feature in plots",
+            "rdfs:label": "order",
+            "schema:domainIncludes": {
+                "@id": "bts:Features"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "order",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "int",
+                "inRange 0 100 error"
+            ]
+        },
+        {
+            "@id": "bts:unit",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The unit of measurement",
+            "rdfs:label": "unit",
+            "schema:domainIncludes": {
+                "@id": "bts:Features"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "unit",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:FeaturesToSamples",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "feature to sample relationship",
+            "rdfs:label": "FeaturesToSamples",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "features_to_samples",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Features"
+                },
+                {
+                    "@id": "bts:Samples"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:featuresId"
+                },
+                {
+                    "@id": "bts:samplesId"
+                },
+                {
+                    "@id": "bts:featuresToSamplesValue"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:featuresToSamplesValue",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The value of the feature for the sample",
+            "rdfs:label": "featuresToSamplesValue",
+            "schema:domainIncludes": {
+                "@id": "bts:FeaturesToSamples"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "features_to_samples _value",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "num"
+            ]
+        },
+        {
+            "@id": "bts:Genesx",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A gene",
+            "rdfs:label": "Genesx",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "genesx",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:entrez"
+                },
+                {
+                    "@id": "bts:hgnc"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:GenesToSamples",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "gene to sample relationship",
+            "rdfs:label": "GenesToSamples",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "genes_to_samples",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Genesx"
+                },
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:bulkRnaExpression"
+                },
+                {
+                    "@id": "bts:genesId"
+                },
+                {
+                    "@id": "bts:samplesId"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:bulkRnaExpression",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Bulk RNA expression value",
+            "rdfs:label": "bulkRnaExpression",
+            "schema:domainIncludes": {
+                "@id": "bts:GenesToSamples"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "bulk_rna_expression",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "num",
+                "inRange 0 10000000000 error"
+            ]
+        },
+        {
+            "@id": "bts:Patients",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A patient",
+            "rdfs:label": "Patients",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "patients",
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
@@ -2038,7 +2297,7 @@
             "rdfs:comment": "The name of a patient",
             "rdfs:label": "patientName",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2055,7 +2314,7 @@
             "rdfs:comment": "The age of the patient at diagnosis",
             "rdfs:label": "ageAtDiagnosis",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2073,7 +2332,7 @@
             "rdfs:comment": "The ethnicity of the patient",
             "rdfs:label": "ethnicity",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2098,7 +2357,7 @@
             "rdfs:comment": "The gender of the patient",
             "rdfs:label": "gender",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2123,7 +2382,7 @@
             "rdfs:comment": "The height of the patient",
             "rdfs:label": "height",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2141,7 +2400,7 @@
             "rdfs:comment": "The race of the patient",
             "rdfs:label": "race",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2175,7 +2434,7 @@
             "rdfs:comment": "The weight of the patient",
             "rdfs:label": "weight",
             "schema:domainIncludes": {
-                "@id": "bts:Patient"
+                "@id": "bts:Patients"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2188,10 +2447,10 @@
             ]
         },
         {
-            "@id": "bts:Sample",
+            "@id": "bts:Samples",
             "@type": "rdfs:Class",
             "rdfs:comment": "A patients specific sample",
-            "rdfs:label": "Sample",
+            "rdfs:label": "Samples",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2200,11 +2459,11 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "sample",
+            "sms:displayName": "samples",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "sms:requiresDependency": [
@@ -2215,7 +2474,7 @@
                     "@id": "bts:sampleName"
                 },
                 {
-                    "@id": "bts:samplePatientId"
+                    "@id": "bts:patientsId"
                 }
             ],
             "sms:validationRules": []
@@ -2226,7 +2485,7 @@
             "rdfs:comment": "The name of a sample",
             "rdfs:label": "sampleName",
             "schema:domainIncludes": {
-                "@id": "bts:Sample"
+                "@id": "bts:Samples"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2238,27 +2497,78 @@
             ]
         },
         {
-            "@id": "bts:samplePatientId",
+            "@id": "bts:featuresId",
             "@type": "rdf:Property",
-            "rdfs:comment": "The id of the patient the sample belongs to",
-            "rdfs:label": "samplePatientId",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "featuresId",
             "schema:domainIncludes": {
-                "@id": "bts:Sample"
+                "@id": "bts:FeaturesToSamples"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "sample_patient_id",
+            "sms:displayName": "features_id",
             "sms:required": "sms:true",
             "sms:validationRules": [
-                "matchAtLeastOne patients.patient_id set error"
+                "matchAtLeastOne features.id set error"
             ]
         },
         {
-            "@id": "bts:Feature",
+            "@id": "bts:genesId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "genesId",
+            "schema:domainIncludes": {
+                "@id": "bts:GenesToSamples"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "genes_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne genesx.id set error"
+            ]
+        },
+        {
+            "@id": "bts:patientsId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "patientsId",
+            "schema:domainIncludes": {
+                "@id": "bts:Samples"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "patients_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne patients.id set error"
+            ]
+        },
+        {
+            "@id": "bts:samplesId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "samplesId",
+            "schema:domainIncludes": {
+                "@id": "bts:GenesToSamples"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "samples_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne samples.id set error"
+            ]
+        },
+        {
+            "@id": "bts:Sample",
             "@type": "rdfs:Class",
-            "rdfs:comment": "A result of an assay with a numeric result",
-            "rdfs:label": "Feature",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Sample",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2267,185 +2577,9 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "feature",
+            "sms:displayName": "sample",
             "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:featureName"
-                },
-                {
-                    "@id": "bts:featureDisplay"
-                },
-                {
-                    "@id": "bts:order"
-                },
-                {
-                    "@id": "bts:unit"
-                }
-            ],
             "sms:validationRules": []
-        },
-        {
-            "@id": "bts:featureName",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The name of the feature",
-            "rdfs:label": "featureName",
-            "schema:domainIncludes": {
-                "@id": "bts:Feature"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "feature_name",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:featureDisplay",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The display name of the feature",
-            "rdfs:label": "featureDisplay",
-            "schema:domainIncludes": {
-                "@id": "bts:Feature"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "feature_display",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:order",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The order used to display the feature in plots",
-            "rdfs:label": "order",
-            "schema:domainIncludes": {
-                "@id": "bts:Feature"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "order",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "int",
-                "inRange 0 100 error"
-            ]
-        },
-        {
-            "@id": "bts:unit",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The unit of measurement",
-            "rdfs:label": "unit",
-            "schema:domainIncludes": {
-                "@id": "bts:Feature"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "unit",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:FeatureToSample",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "feature to sample relationship",
-            "rdfs:label": "FeatureToSample",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "feature_to_sample",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:Feature"
-                },
-                {
-                    "@id": "bts:Sample"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:featureToSampleFeatureId"
-                },
-                {
-                    "@id": "bts:featureToSampleSampleId"
-                },
-                {
-                    "@id": "bts:featureValue"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:featureToSampleFeatureId",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The id of the feature",
-            "rdfs:label": "featureToSampleFeatureId",
-            "schema:domainIncludes": {
-                "@id": "bts:FeatureToSample"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "feature_to_sample_feature_id",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "matchAtLeastOne feature.feature_id set error"
-            ]
-        },
-        {
-            "@id": "bts:featureToSampleSampleId",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The id of the sample",
-            "rdfs:label": "featureToSampleSampleId",
-            "schema:domainIncludes": {
-                "@id": "bts:FeatureToSample"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "feature_to_sample_sample_id",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "matchAtLeastOne sample.sample_id set error"
-            ]
-        },
-        {
-            "@id": "bts:featureValue",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The value of the feature for the sample",
-            "rdfs:label": "featureValue",
-            "schema:domainIncludes": {
-                "@id": "bts:FeatureToSample"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "feature_value",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "num"
-            ]
         },
         {
             "@id": "bts:Nothispanicorlatino",
@@ -2454,7 +2588,7 @@
             "rdfs:label": "Nothispanicorlatino",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2471,7 +2605,7 @@
             "rdfs:label": "Hispanicorlatino",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2488,7 +2622,7 @@
             "rdfs:label": "Female",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2505,7 +2639,7 @@
             "rdfs:label": "Male",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2522,7 +2656,7 @@
             "rdfs:label": "White",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2539,7 +2673,7 @@
             "rdfs:label": "Blackorafricanamerican",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2556,7 +2690,7 @@
             "rdfs:label": "Asian",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2573,7 +2707,7 @@
             "rdfs:label": "Nativehawaiianorotherpacificislander",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
@@ -2590,7 +2724,7 @@
             "rdfs:label": "Americanindianoralaskanative",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Patients"
                 }
             ],
             "schema:isPartOf": {
