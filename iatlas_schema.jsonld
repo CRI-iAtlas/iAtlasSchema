@@ -2147,17 +2147,19 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:featuresToSamplesValue",
-            "@type": "rdf:Property",
+            "@id": "bts:FeaturesToSamplesValue",
+            "@type": "rdfs:Class",
             "rdfs:comment": "The value of the feature for the sample",
-            "rdfs:label": "featuresToSamplesValue",
-            "schema:domainIncludes": {
-                "@id": "bts:FeaturesToSamples"
-            },
+            "rdfs:label": "FeaturesToSamplesValue",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "features_to_samples _value",
+            "sms:displayName": "features_to_samples_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num"
@@ -2211,7 +2213,7 @@
                     "@id": "bts:Genesx"
                 },
                 {
-                    "@id": "bts:Sample"
+                    "@id": "bts:Samples"
                 }
             ],
             "sms:requiresDependency": [
@@ -2565,19 +2567,17 @@
             ]
         },
         {
-            "@id": "bts:Sample",
-            "@type": "rdfs:Class",
+            "@id": "bts:featuresToSamplesValue",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Sample",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "featuresToSamplesValue",
+            "schema:domainIncludes": {
+                "@id": "bts:FeaturesToSamples"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "sample",
+            "sms:displayName": "features_to_samples _value",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
