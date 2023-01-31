@@ -2191,16 +2191,13 @@
                     "@id": "bts:hgncId"
                 },
                 {
-                    "@id": "bts:geneFamily"
-                },
-                {
                     "@id": "bts:geneFunction"
                 },
                 {
                     "@id": "bts:immuneCheckpoint"
                 },
                 {
-                    "@id": "bts:pathway"
+                    "@id": "bts:genePathway"
                 },
                 {
                     "@id": "bts:superCategory"
@@ -2290,15 +2287,13 @@
             ]
         },
         {
-            "@id": "bts:GenePathway",
-            "@type": "rdfs:Class",
+            "@id": "bts:genePathway",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "GenePathway",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "genePathway",
+            "schema:domainIncludes": {
+                "@id": "bts:Genes"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3135,36 +3130,6 @@
             "sms:validationRules": [
                 "matchAtLeastOne samples.id set error"
             ]
-        },
-        {
-            "@id": "bts:geneFamily",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "geneFamily",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "gene_family",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:pathway",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "pathway",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "pathway",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
         },
         {
             "@id": "bts:descrption",
