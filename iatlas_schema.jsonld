@@ -2358,23 +2358,6 @@
             ]
         },
         {
-            "@id": "bts:description",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "description",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "description",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
             "@id": "bts:ioLandscapeName",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
@@ -2473,7 +2456,7 @@
         {
             "@id": "bts:GenesToGeneSets",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Gene  and gene set relationship",
+            "rdfs:comment": "Gene and gene set relationship",
             "rdfs:label": "GenesToGeneSets",
             "rdfs:subClassOf": [
                 {
@@ -2977,6 +2960,96 @@
             ]
         },
         {
+            "@id": "bts:Slides",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A physical slide",
+            "rdfs:label": "Slides",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "slides",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:name"
+                },
+                {
+                    "@id": "bts:display"
+                },
+                {
+                    "@id": "bts:descrption"
+                },
+                {
+                    "@id": "bts:patientId"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:name",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "name",
+            "schema:domainIncludes": {
+                "@id": "bts:Slides"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "name",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:display",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "display",
+            "schema:domainIncludes": {
+                "@id": "bts:Slides"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "display",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:description",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "description",
+            "schema:domainIncludes": {
+                "@id": "bts:Genes"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "description",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
             "@id": "bts:featuresId",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
@@ -3077,6 +3150,36 @@
             "sms:validationRules": [
                 "matchAtLeastOne samples.id set error"
             ]
+        },
+        {
+            "@id": "bts:descrption",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "descrption",
+            "schema:domainIncludes": {
+                "@id": "bts:Slides"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "descrption",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:patientId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "patientId",
+            "schema:domainIncludes": {
+                "@id": "bts:Slides"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "patient_id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         },
         {
             "@id": "bts:Fraction",
