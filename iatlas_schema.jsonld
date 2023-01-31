@@ -2970,7 +2970,7 @@
                     "@id": "bts:display"
                 },
                 {
-                    "@id": "bts:descrption"
+                    "@id": "bts:description"
                 },
                 {
                     "@id": "bts:patientId"
@@ -3018,7 +3018,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "description",
             "schema:domainIncludes": {
-                "@id": "bts:Genes"
+                "@id": "bts:Slides"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -3130,21 +3130,6 @@
             "sms:validationRules": [
                 "matchAtLeastOne samples.id set error"
             ]
-        },
-        {
-            "@id": "bts:descrption",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "descrption",
-            "schema:domainIncludes": {
-                "@id": "bts:Slides"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "descrption",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
         },
         {
             "@id": "bts:patientId",
