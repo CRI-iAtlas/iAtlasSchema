@@ -2256,23 +2256,6 @@
             ]
         },
         {
-            "@id": "bts:geneFamily",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "geneFamily",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "gene_family",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
             "@id": "bts:geneFunction",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
@@ -3150,6 +3133,21 @@
             "sms:validationRules": [
                 "matchAtLeastOne samples.id set error"
             ]
+        },
+        {
+            "@id": "bts:geneFamily",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "geneFamily",
+            "schema:domainIncludes": {
+                "@id": "bts:Genes"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "gene_family",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         },
         {
             "@id": "bts:descrption",
