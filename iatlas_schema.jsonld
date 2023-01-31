@@ -2290,17 +2290,19 @@
             ]
         },
         {
-            "@id": "bts:pathway",
-            "@type": "rdf:Property",
+            "@id": "bts:GenePathway",
+            "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "pathway",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "rdfs:label": "GenePathway",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "pathway",
+            "sms:displayName": "gene_pathway",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
@@ -3146,6 +3148,21 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "gene_family",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:pathway",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "pathway",
+            "schema:domainIncludes": {
+                "@id": "bts:Genes"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "pathway",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
