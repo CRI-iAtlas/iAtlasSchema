@@ -2964,10 +2964,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:name"
+                    "@id": "bts:slideName"
                 },
                 {
-                    "@id": "bts:display"
+                    "@id": "bts:slideDisplay"
                 },
                 {
                     "@id": "bts:description"
@@ -2979,13 +2979,49 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:name",
+            "@id": "bts:slideName",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "name",
+            "rdfs:label": "slideName",
             "schema:domainIncludes": {
                 "@id": "bts:Slides"
             },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "slide_name",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:slideDisplay",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "slideDisplay",
+            "schema:domainIncludes": {
+                "@id": "bts:Slides"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "slide_display",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:Name",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Name",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2996,13 +3032,15 @@
             ]
         },
         {
-            "@id": "bts:display",
-            "@type": "rdf:Property",
+            "@id": "bts:Display",
+            "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "display",
-            "schema:domainIncludes": {
-                "@id": "bts:Slides"
-            },
+            "rdfs:label": "Display",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "schema:Thing"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
