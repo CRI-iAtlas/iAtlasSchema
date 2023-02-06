@@ -2527,6 +2527,84 @@
             ]
         },
         {
+            "@id": "bts:Mutations",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A gene mutation",
+            "rdfs:label": "Mutations",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "mutations",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:name"
+                },
+                {
+                    "@id": "bts:genesId"
+                },
+                {
+                    "@id": "bts:mutationType"
+                },
+                {
+                    "@id": "bts:mutationCode"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:mutationCode",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "mutationCode",
+            "schema:domainIncludes": {
+                "@id": "bts:Mutations"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "mutation_code",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:mutationType",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "mutationType",
+            "schema:domainIncludes": {
+                "@id": "bts:Mutations"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Drivermutation"
+                }
+            ],
+            "sms:displayName": "mutation_type",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
             "@id": "bts:Patients",
             "@type": "rdfs:Class",
             "rdfs:comment": "A patient",
@@ -2940,6 +3018,70 @@
             ]
         },
         {
+            "@id": "bts:SamplesToMutations",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SamplesToMutations",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "samples_to_mutations",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Samples"
+                },
+                {
+                    "@id": "bts:Mutations"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:samplesId"
+                },
+                {
+                    "@id": "bts:mutationsId"
+                },
+                {
+                    "@id": "bts:mutationStatus"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:mutationStatus",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The status of the mutation for the sample",
+            "rdfs:label": "mutationStatus",
+            "schema:domainIncludes": {
+                "@id": "bts:SamplesToMutations"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Wt"
+                },
+                {
+                    "@id": "bts:Mut"
+                }
+            ],
+            "sms:displayName": "mutation_status",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
             "@id": "bts:Slides",
             "@type": "rdfs:Class",
             "rdfs:comment": "A physical slide",
@@ -3013,15 +3155,13 @@
             ]
         },
         {
-            "@id": "bts:Name",
-            "@type": "rdfs:Class",
+            "@id": "bts:name",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Name",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "name",
+            "schema:domainIncludes": {
+                "@id": "bts:Mutations"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3158,7 +3298,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "samplesId",
             "schema:domainIncludes": {
-                "@id": "bts:GenesToSamples"
+                "@id": "bts:SamplesToMutations"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -3167,6 +3307,23 @@
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne samples.id set error"
+            ]
+        },
+        {
+            "@id": "bts:mutationsId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "mutationsId",
+            "schema:domainIncludes": {
+                "@id": "bts:SamplesToMutations"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "mutations_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne mutations.id set error"
             ]
         },
         {
@@ -3266,6 +3423,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Year",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Drivermutation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Drivermutation",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Mutations"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "driver mutation",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -3419,6 +3593,40 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "american indian or alaska native",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Wt",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Wt",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SamplesToMutations"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Wt",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Mut",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Mut",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SamplesToMutations"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Mut",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }
