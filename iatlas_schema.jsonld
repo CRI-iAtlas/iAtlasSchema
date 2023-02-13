@@ -2005,6 +2005,62 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:Cohorts",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Cohorts",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "cohorts",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Datasets"
+                },
+                {
+                    "@id": "bts:Tags"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:datasetId"
+                },
+                {
+                    "@id": "bts:cohortTagId"
+                },
+                {
+                    "@id": "bts:id"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:cohortTagId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "cohortTagId",
+            "schema:domainIncludes": {
+                "@id": "bts:Cohorts"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "cohort_tag_id",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "matchAtLeastOne tags.id set error"
+            ]
+        },
+        {
             "@id": "bts:Colocalizations",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -2072,6 +2128,9 @@
                 },
                 {
                     "@id": "bts:link"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2325,6 +2384,9 @@
                 },
                 {
                     "@id": "bts:datasetType"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2386,6 +2448,9 @@
                 },
                 {
                     "@id": "bts:tagsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2446,6 +2511,9 @@
                 },
                 {
                     "@id": "bts:log10FoldChange"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2494,6 +2562,9 @@
                 },
                 {
                     "@id": "bts:pValue"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2548,6 +2619,9 @@
                 },
                 {
                     "@id": "bts:score"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2622,6 +2696,9 @@
                 },
                 {
                     "@id": "bts:methodTag"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2747,6 +2824,9 @@
                 },
                 {
                     "@id": "bts:featureToSampleValue"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2819,6 +2899,9 @@
                 },
                 {
                     "@id": "bts:friendlyName"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -2983,6 +3066,9 @@
                 },
                 {
                     "@id": "bts:display"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3019,6 +3105,9 @@
                 },
                 {
                     "@id": "bts:geneSetsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3058,6 +3147,9 @@
                 },
                 {
                     "@id": "bts:samplesId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3127,6 +3219,9 @@
                 },
                 {
                     "@id": "bts:se"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3183,6 +3278,9 @@
                 },
                 {
                     "@id": "bts:mutationCode"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3268,6 +3366,9 @@
                 },
                 {
                     "@id": "bts:datasetsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3403,6 +3504,9 @@
                 },
                 {
                     "@id": "bts:tagsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3446,6 +3550,9 @@
                 },
                 {
                     "@id": "bts:weight"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3627,6 +3734,9 @@
                 },
                 {
                     "@id": "bts:link"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3735,6 +3845,9 @@
                 },
                 {
                     "@id": "bts:publicationsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3771,6 +3884,9 @@
                 },
                 {
                     "@id": "bts:tagsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3837,6 +3953,9 @@
                 },
                 {
                     "@id": "bts:q3"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3938,6 +4057,9 @@
                 },
                 {
                     "@id": "bts:patientsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -3977,6 +4099,9 @@
                 },
                 {
                     "@id": "bts:mutationStatus"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -4038,6 +4163,9 @@
                 },
                 {
                     "@id": "bts:tagsId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -4077,6 +4205,9 @@
                 },
                 {
                     "@id": "bts:patientId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -4111,6 +4242,9 @@
                 },
                 {
                     "@id": "bts:bp"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -4199,6 +4333,9 @@
                 },
                 {
                     "@id": "bts:tagType"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -4260,6 +4397,9 @@
                 },
                 {
                     "@id": "bts:parentTagId"
+                },
+                {
+                    "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
@@ -4279,6 +4419,23 @@
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne tags.id set error"
+            ]
+        },
+        {
+            "@id": "bts:id",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "id",
+            "schema:domainIncludes": {
+                "@id": "bts:TagsToTags"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
             ]
         },
         {
@@ -4854,6 +5011,21 @@
             "sms:validationRules": [
                 "matchAtLeastOne snps.id set error"
             ]
+        },
+        {
+            "@id": "bts:datasetId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "datasetId",
+            "schema:domainIncludes": {
+                "@id": "bts:Cohorts"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "dataset_id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         },
         {
             "@id": "bts:genbeFamily",
