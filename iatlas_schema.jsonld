@@ -3904,7 +3904,7 @@
                     "@id": "bts:mean"
                 },
                 {
-                    "@id": "bts:nMutants"
+                    "@id": "bts:nMutant"
                 },
                 {
                     "@id": "bts:nTotal"
@@ -4169,7 +4169,7 @@
                     "@id": "bts:description"
                 },
                 {
-                    "@id": "bts:patientId"
+                    "@id": "bts:patientsId"
                 }
             ],
             "sms:validationRules": []
@@ -4703,13 +4703,13 @@
             ]
         },
         {
-            "@id": "bts:NMutant",
-            "@type": "rdfs:Class",
+            "@id": "bts:nMutant",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "NMutant",
-            "rdfs:subClassOf": [
+            "rdfs:label": "nMutant",
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:RareVariantAssociationPathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4982,6 +4982,9 @@
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Samples"
+                },
+                {
+                    "@id": "bts:Slides"
                 }
             ],
             "schema:isPartOf": {
@@ -5203,151 +5206,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "genbe_family",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:nMutants",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "nMutants",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:_"
-                },
-                {
-                    "@id": "bts:V"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:N"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:_"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:S"
-                },
-                {
-                    "@id": "bts:S"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:C"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:N"
-                },
-                {
-                    "@id": "bts:_"
-                },
-                {
-                    "@id": "bts:P"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:H"
-                },
-                {
-                    "@id": "bts:W"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:Y"
-                },
-                {
-                    "@id": "bts:S"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "n_mutants",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:patientId",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "patientId",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:S"
-                },
-                {
-                    "@id": "bts:L"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:D"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:S"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "patient_id",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
