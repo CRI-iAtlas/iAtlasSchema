@@ -5460,31 +5460,7 @@
             "rdfs:label": "Amp",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:D"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:C"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:N"
+                    "@id": "bts:Direction"
                 }
             ],
             "schema:isPartOf": {
@@ -5501,31 +5477,7 @@
             "rdfs:label": "Del",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:D"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:C"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:I"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:N"
+                    "@id": "bts:Direction"
                 }
             ],
             "schema:isPartOf": {
@@ -5678,25 +5630,7 @@
             "rdfs:label": "ExtracellularNetwork",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:N"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:W"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:K"
+                    "@id": "bts:Network"
                 }
             ],
             "schema:isPartOf": {
@@ -5713,25 +5647,7 @@
             "rdfs:label": "CellimageNetwork",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:N"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:W"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:K"
+                    "@id": "bts:Network"
                 }
             ],
             "schema:isPartOf": {
