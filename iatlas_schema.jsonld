@@ -893,9 +893,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "gene hgnc name",
             "rdfs:label": "hgnc",
-            "schema:domainIncludes": {
-                "@id": "bts:Gene"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Hgnc"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -915,9 +917,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "gene entrez id",
             "rdfs:label": "entrez",
-            "schema:domainIncludes": {
-                "@id": "bts:Gene"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Entrez"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2048,9 +2052,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "cohortTagId",
-            "schema:domainIncludes": {
-                "@id": "bts:Cohorts"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Cohorts"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2140,9 +2146,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "colocDatasetId",
-            "schema:domainIncludes": {
-                "@id": "bts:Colocalizations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2157,9 +2165,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "qtlType",
-            "schema:domainIncludes": {
-                "@id": "bts:Colocalizations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2182,9 +2192,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "ecaviarPp",
-            "schema:domainIncludes": {
-                "@id": "bts:Colocalizations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2207,9 +2219,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "plotType",
-            "schema:domainIncludes": {
-                "@id": "bts:Colocalizations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2232,9 +2246,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "spliceLoc",
-            "schema:domainIncludes": {
-                "@id": "bts:Colocalizations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2249,9 +2265,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "tissue",
-            "schema:domainIncludes": {
-                "@id": "bts:Colocalizations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2396,9 +2414,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "datasetType",
-            "schema:domainIncludes": {
-                "@id": "bts:Datasets"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Datasets"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2574,9 +2594,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "maf",
-            "schema:domainIncludes": {
-                "@id": "bts:GermlineGwasResult"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:GermlineGwasResult"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2631,9 +2653,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "node1Id",
-            "schema:domainIncludes": {
-                "@id": "bts:Edges"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Edges"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2648,9 +2672,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "node2Id",
-            "schema:domainIncludes": {
-                "@id": "bts:Edges"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Edges"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2708,9 +2734,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The order used to display the feature in plots",
             "rdfs:label": "order",
-            "schema:domainIncludes": {
-                "@id": "bts:Features"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Features"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2726,9 +2754,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The unit of measurement",
             "rdfs:label": "unit",
-            "schema:domainIncludes": {
-                "@id": "bts:Features"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Features"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2760,9 +2790,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "class",
-            "schema:domainIncludes": {
-                "@id": "bts:Features"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Features"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2777,9 +2809,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "methodTag",
-            "schema:domainIncludes": {
-                "@id": "bts:Features"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Features"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2836,9 +2870,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The value of the feature for the sample",
             "rdfs:label": "featureToSampleValue",
-            "schema:domainIncludes": {
-                "@id": "bts:FeaturesToSamples"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:FeaturesToSamples"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2928,9 +2964,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "geneFunction",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2945,9 +2983,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "immuneCheckpoint",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2962,9 +3002,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "genePathway",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2979,9 +3021,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "superCategory",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2996,9 +3040,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "therapyType",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3013,9 +3059,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "ioLandscapeName",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3030,9 +3078,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "friendlyName",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3159,9 +3209,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "Bulk RNA expression value",
             "rdfs:label": "bulkRnaExpression",
-            "schema:domainIncludes": {
-                "@id": "bts:GenesToSamples"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:GenesToSamples"
+                },
+                {
+                    "@id": "bts:GenesToSamples"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3231,9 +3286,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "cluster",
-            "schema:domainIncludes": {
-                "@id": "bts:HeritibilityResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:HeritibilityResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3290,9 +3347,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "mutationCode",
-            "schema:domainIncludes": {
-                "@id": "bts:Mutations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Mutations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3307,9 +3366,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "mutationType",
-            "schema:domainIncludes": {
-                "@id": "bts:Mutations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Mutations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3378,9 +3439,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "x",
-            "schema:domainIncludes": {
-                "@id": "bts:Nodes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Nodes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3395,9 +3458,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "y",
-            "schema:domainIncludes": {
-                "@id": "bts:Nodes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Nodes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3562,9 +3627,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The age of the patient at diagnosis",
             "rdfs:label": "ageAtDiagnosis",
-            "schema:domainIncludes": {
-                "@id": "bts:Patients"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3580,9 +3647,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The ethnicity of the patient",
             "rdfs:label": "ethnicity",
-            "schema:domainIncludes": {
-                "@id": "bts:Patients"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3605,9 +3674,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The gender of the patient",
             "rdfs:label": "gender",
-            "schema:domainIncludes": {
-                "@id": "bts:Patients"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3630,9 +3701,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The height of the patient",
             "rdfs:label": "height",
-            "schema:domainIncludes": {
-                "@id": "bts:Patients"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3648,9 +3721,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The race of the patient",
             "rdfs:label": "race",
-            "schema:domainIncludes": {
-                "@id": "bts:Patients"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3682,9 +3757,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The weight of the patient",
             "rdfs:label": "weight",
-            "schema:domainIncludes": {
-                "@id": "bts:Patients"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patients"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3746,9 +3823,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "doId",
-            "schema:domainIncludes": {
-                "@id": "bts:Publications"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3761,9 +3840,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The pubmed id",
             "rdfs:label": "pubmedId",
-            "schema:domainIncludes": {
-                "@id": "bts:Publications"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3778,9 +3859,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The Jorunal name",
             "rdfs:label": "journal",
-            "schema:domainIncludes": {
-                "@id": "bts:Publications"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3795,9 +3878,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The first authors last name",
             "rdfs:label": "firstAuthorLastName",
-            "schema:domainIncludes": {
-                "@id": "bts:Publications"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3965,9 +4050,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "pathway",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3982,9 +4069,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "q1",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -3999,9 +4088,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "q2",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4016,9 +4107,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "q3",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4111,9 +4204,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "The status of the mutation for the sample",
             "rdfs:label": "mutationStatus",
-            "schema:domainIncludes": {
-                "@id": "bts:SamplesToMutations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:SamplesToMutations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4254,9 +4349,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "rsid",
-            "schema:domainIncludes": {
-                "@id": "bts:Snps"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Snps"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4271,9 +4368,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "chr",
-            "schema:domainIncludes": {
-                "@id": "bts:Snps"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Snps"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4288,9 +4387,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "bp",
-            "schema:domainIncludes": {
-                "@id": "bts:Snps"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Snps"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4345,9 +4446,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "tagType",
-            "schema:domainIncludes": {
-                "@id": "bts:Tags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Tags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4409,9 +4512,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "parentTagId",
-            "schema:domainIncludes": {
-                "@id": "bts:TagsToTags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:TagsToTags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4426,9 +4531,95 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "id",
-            "schema:domainIncludes": {
-                "@id": "bts:TagsToTags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Cohorts"
+                },
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:Datasets"
+                },
+                {
+                    "@id": "bts:DatasetsToTags"
+                },
+                {
+                    "@id": "bts:DriverResults"
+                },
+                {
+                    "@id": "bts:GermlineGwasResult"
+                },
+                {
+                    "@id": "bts:Edges"
+                },
+                {
+                    "@id": "bts:Features"
+                },
+                {
+                    "@id": "bts:FeaturesToSamples"
+                },
+                {
+                    "@id": "bts:Genes"
+                },
+                {
+                    "@id": "bts:GeneSets"
+                },
+                {
+                    "@id": "bts:GenesToGeneSets"
+                },
+                {
+                    "@id": "bts:GenesToSamples"
+                },
+                {
+                    "@id": "bts:HeritibilityResults"
+                },
+                {
+                    "@id": "bts:Mutations"
+                },
+                {
+                    "@id": "bts:Nodes"
+                },
+                {
+                    "@id": "bts:NodesToTags"
+                },
+                {
+                    "@id": "bts:Patients"
+                },
+                {
+                    "@id": "bts:Publications"
+                },
+                {
+                    "@id": "bts:PublicationsToGenesToGeneSets"
+                },
+                {
+                    "@id": "bts:PublicationsToTags"
+                },
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                },
+                {
+                    "@id": "bts:Samples"
+                },
+                {
+                    "@id": "bts:SamplesToMutations"
+                },
+                {
+                    "@id": "bts:SamplesToTags"
+                },
+                {
+                    "@id": "bts:Slides"
+                },
+                {
+                    "@id": "bts:Snps"
+                },
+                {
+                    "@id": "bts:Tags"
+                },
+                {
+                    "@id": "bts:TagsToTags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4443,9 +4634,47 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "name",
-            "schema:domainIncludes": {
-                "@id": "bts:Tags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Cohorts"
+                },
+                {
+                    "@id": "bts:Datasets"
+                },
+                {
+                    "@id": "bts:Edges"
+                },
+                {
+                    "@id": "bts:Features"
+                },
+                {
+                    "@id": "bts:GeneSets"
+                },
+                {
+                    "@id": "bts:Mutations"
+                },
+                {
+                    "@id": "bts:Nodes"
+                },
+                {
+                    "@id": "bts:Patients"
+                },
+                {
+                    "@id": "bts:Publications"
+                },
+                {
+                    "@id": "bts:Samples"
+                },
+                {
+                    "@id": "bts:Slides"
+                },
+                {
+                    "@id": "bts:Snps"
+                },
+                {
+                    "@id": "bts:Tags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4460,9 +4689,23 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "display",
-            "schema:domainIncludes": {
-                "@id": "bts:Tags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Datasets"
+                },
+                {
+                    "@id": "bts:Features"
+                },
+                {
+                    "@id": "bts:GeneSets"
+                },
+                {
+                    "@id": "bts:Slides"
+                },
+                {
+                    "@id": "bts:Tags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4477,9 +4720,17 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "description",
-            "schema:domainIncludes": {
-                "@id": "bts:Tags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Genes"
+                },
+                {
+                    "@id": "bts:Slides"
+                },
+                {
+                    "@id": "bts:Tags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4494,9 +4745,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "color",
-            "schema:domainIncludes": {
-                "@id": "bts:Tags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Tags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4511,9 +4764,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "link",
-            "schema:domainIncludes": {
-                "@id": "bts:Publications"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4528,9 +4786,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "year",
-            "schema:domainIncludes": {
-                "@id": "bts:Publications"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Publications"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4545,9 +4805,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "label",
-            "schema:domainIncludes": {
-                "@id": "bts:Nodes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Edges"
+                },
+                {
+                    "@id": "bts:Nodes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4562,9 +4827,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "score",
-            "schema:domainIncludes": {
-                "@id": "bts:Nodes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Edges"
+                },
+                {
+                    "@id": "bts:Nodes"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4579,9 +4849,20 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "pValue",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:DriverResults"
+                },
+                {
+                    "@id": "bts:GermlineGwasResult"
+                },
+                {
+                    "@id": "bts:HeritibilityResults"
+                },
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4597,9 +4878,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "foldChange",
-            "schema:domainIncludes": {
-                "@id": "bts:DriverResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:DriverResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4614,9 +4897,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "log10PValue",
-            "schema:domainIncludes": {
-                "@id": "bts:DriverResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:DriverResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4631,9 +4916,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "log10FoldChange",
-            "schema:domainIncludes": {
-                "@id": "bts:DriverResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:DriverResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4688,9 +4975,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "nTotal",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4725,9 +5014,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "fdr",
-            "schema:domainIncludes": {
-                "@id": "bts:HeritibilityResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:HeritibilityResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4743,9 +5034,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "variance",
-            "schema:domainIncludes": {
-                "@id": "bts:HeritibilityResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:HeritibilityResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4761,9 +5054,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "se",
-            "schema:domainIncludes": {
-                "@id": "bts:HeritibilityResults"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:HeritibilityResults"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4779,9 +5074,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "mean",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4796,9 +5093,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "min",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4813,9 +5112,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "max",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4830,9 +5131,29 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "featuresId",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:DriverResults"
+                },
+                {
+                    "@id": "bts:GermlineGwasResult"
+                },
+                {
+                    "@id": "bts:FeaturesToSamples"
+                },
+                {
+                    "@id": "bts:HeritibilityResults"
+                },
+                {
+                    "@id": "bts:Nodes"
+                },
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4847,9 +5168,29 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "genesId",
-            "schema:domainIncludes": {
-                "@id": "bts:PublicationsToGenesToGeneSets"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:GenesToGeneSets"
+                },
+                {
+                    "@id": "bts:GenesToSamples"
+                },
+                {
+                    "@id": "bts:Mutations"
+                },
+                {
+                    "@id": "bts:Nodes"
+                },
+                {
+                    "@id": "bts:PublicationsToGenesToGeneSets"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4864,9 +5205,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "geneSetsId",
-            "schema:domainIncludes": {
-                "@id": "bts:PublicationsToGenesToGeneSets"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:GenesToGeneSets"
+                },
+                {
+                    "@id": "bts:PublicationsToGenesToGeneSets"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4881,9 +5227,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "patientsId",
-            "schema:domainIncludes": {
-                "@id": "bts:Samples"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Samples"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4898,9 +5246,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "publicationsId",
-            "schema:domainIncludes": {
-                "@id": "bts:PublicationsToTags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:PublicationsToGenesToGeneSets"
+                },
+                {
+                    "@id": "bts:PublicationsToTags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4915,9 +5268,20 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "samplesId",
-            "schema:domainIncludes": {
-                "@id": "bts:SamplesToTags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:FeaturesToSamples"
+                },
+                {
+                    "@id": "bts:GenesToSamples"
+                },
+                {
+                    "@id": "bts:SamplesToMutations"
+                },
+                {
+                    "@id": "bts:SamplesToTags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4932,9 +5296,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "mutationsId",
-            "schema:domainIncludes": {
-                "@id": "bts:SamplesToMutations"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:DriverResults"
+                },
+                {
+                    "@id": "bts:SamplesToMutations"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4949,9 +5318,26 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "tagsId",
-            "schema:domainIncludes": {
-                "@id": "bts:TagsToTags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:DatasetsToTags"
+                },
+                {
+                    "@id": "bts:DriverResults"
+                },
+                {
+                    "@id": "bts:NodesToTags"
+                },
+                {
+                    "@id": "bts:PublicationsToTags"
+                },
+                {
+                    "@id": "bts:SamplesToTags"
+                },
+                {
+                    "@id": "bts:TagsToTags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4966,9 +5352,29 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "datasetsId",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:DatasetsToTags"
+                },
+                {
+                    "@id": "bts:DriverResults"
+                },
+                {
+                    "@id": "bts:GermlineGwasResult"
+                },
+                {
+                    "@id": "bts:HeritibilityResults"
+                },
+                {
+                    "@id": "bts:Nodes"
+                },
+                {
+                    "@id": "bts:RareVariantAssociationPathways"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -4983,9 +5389,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "nodesId",
-            "schema:domainIncludes": {
-                "@id": "bts:NodesToTags"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:NodesToTags"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -5000,9 +5408,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "snpsId",
-            "schema:domainIncludes": {
-                "@id": "bts:GermlineGwasResult"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Colocalizations"
+                },
+                {
+                    "@id": "bts:GermlineGwasResult"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -5017,9 +5430,29 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "datasetId",
-            "schema:domainIncludes": {
-                "@id": "bts:Cohorts"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:C"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:H"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:S"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -5032,9 +5465,23 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "genbeFamily",
-            "schema:domainIncludes": {
-                "@id": "bts:Genes"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:G"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:N"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:S"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -5047,9 +5494,107 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "nMutants",
-            "schema:domainIncludes": {
-                "@id": "bts:RareVariantAssociationPathways"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:V"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:N"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:S"
+                },
+                {
+                    "@id": "bts:S"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:C"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:N"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:P"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:H"
+                },
+                {
+                    "@id": "bts:W"
+                },
+                {
+                    "@id": "bts:A"
+                },
+                {
+                    "@id": "bts:Y"
+                },
+                {
+                    "@id": "bts:S"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -5062,9 +5607,26 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "patientId",
-            "schema:domainIncludes": {
-                "@id": "bts:Slides"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:S"
+                },
+                {
+                    "@id": "bts:L"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:D"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:S"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -5181,7 +5743,31 @@
             "rdfs:label": "Amp",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Direction"
+                    "@id": "bts:D"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:C"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:N"
                 }
             ],
             "schema:isPartOf": {
@@ -5198,7 +5784,31 @@
             "rdfs:label": "Del",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Direction"
+                    "@id": "bts:D"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:C"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:I"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:N"
                 }
             ],
             "schema:isPartOf": {
@@ -5351,7 +5961,25 @@
             "rdfs:label": "ExtracellularNetwork",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Network"
+                    "@id": "bts:N"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:W"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:K"
                 }
             ],
             "schema:isPartOf": {
@@ -5368,7 +5996,25 @@
             "rdfs:label": "CellimageNetwork",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Network"
+                    "@id": "bts:N"
+                },
+                {
+                    "@id": "bts:E"
+                },
+                {
+                    "@id": "bts:T"
+                },
+                {
+                    "@id": "bts:W"
+                },
+                {
+                    "@id": "bts:O"
+                },
+                {
+                    "@id": "bts:R"
+                },
+                {
+                    "@id": "bts:K"
                 }
             ],
             "schema:isPartOf": {
