@@ -1,6 +1,6 @@
 Attribute,DependsOn Component,DependsOn,Properties,Required,Validation Rules,Description,Parent,Source,Valid Values
 Component,,,,TRUE,,Type of submitted information.,,,
-cohorts,"datasets, tags","Component, dataset_id, cohort_tag_id, id","name, dataset_id, cohort_tag_id, id",,,,,,
+cohorts,"datasets, tags","Component, datasets_id, cohort_tag_id, id","name, datasets_id, cohort_tag_id, id",,,,,,
 cohort_tag_id,,,,,matchAtLeastOne tags.id set error,,,,
 colocalizations,"genes, features, snps, datasets","Component, genes_id, datasets_id, genes_id, snps_id, features_id, coloc_dataset_id, qtl_type, ecaviar_pp, plot_type, splice_loc, tissue, link, id","genes_id, datasets_id, genes_id, snps_id, features_id, coloc_dataset_id, qtl_type, ecaviar_pp, plot_type, splice_loc, tissue, link, id",,,,,,
 coloc_dataset_id,,,,,matchAtLeastOne datasets.id set error,,,,

@@ -2036,7 +2036,7 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:datasetsId"
                 },
                 {
                     "@id": "bts:cohortTagId"
@@ -5354,6 +5354,9 @@
             "rdfs:label": "datasetsId",
             "schema:domainIncludes": [
                 {
+                    "@id": "bts:Cohorts"
+                },
+                {
                     "@id": "bts:Colocalizations"
                 },
                 {
@@ -5424,41 +5427,6 @@
             "sms:validationRules": [
                 "matchAtLeastOne snps.id set error"
             ]
-        },
-        {
-            "@id": "bts:datasetId",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "datasetId",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:C"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:H"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:R"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:S"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "dataset_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
         },
         {
             "@id": "bts:SQTL",
