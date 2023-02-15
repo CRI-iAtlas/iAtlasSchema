@@ -5461,68 +5461,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:bulkRnaExpression",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "bulkRnaExpression",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:G"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:N"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:S"
-                },
-                {
-                    "@id": "bts:_"
-                },
-                {
-                    "@id": "bts:T"
-                },
-                {
-                    "@id": "bts:O"
-                },
-                {
-                    "@id": "bts:_"
-                },
-                {
-                    "@id": "bts:S"
-                },
-                {
-                    "@id": "bts:A"
-                },
-                {
-                    "@id": "bts:M"
-                },
-                {
-                    "@id": "bts:P"
-                },
-                {
-                    "@id": "bts:L"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:S"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "bulk_rna_expression",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:SQTL",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
