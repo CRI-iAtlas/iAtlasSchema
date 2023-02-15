@@ -2828,7 +2828,7 @@
                     "@id": "bts:hgnc"
                 },
                 {
-                    "@id": "bts:genbeFamily"
+                    "@id": "bts:geneFamily"
                 },
                 {
                     "@id": "bts:geneFunction"
@@ -2858,13 +2858,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:GeneFamily",
-            "@type": "rdfs:Class",
+            "@id": "bts:geneFamily",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "GeneFamily",
-            "rdfs:subClassOf": [
+            "rdfs:label": "geneFamily",
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:Genes"
                 }
             ],
             "schema:isPartOf": {
@@ -5179,35 +5179,6 @@
             "sms:validationRules": [
                 "matchAtLeastOne snps.id set error"
             ]
-        },
-        {
-            "@id": "bts:genbeFamily",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "genbeFamily",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:G"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:N"
-                },
-                {
-                    "@id": "bts:E"
-                },
-                {
-                    "@id": "bts:S"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "genbe_family",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
         },
         {
             "@id": "bts:SQTL",
