@@ -930,7 +930,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "int",
-                "inRange 0 10000000000 error"
+                "inRange 0 None error"
             ]
         },
         {
@@ -2718,7 +2718,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "int",
-                "inRange 0 100 error"
+                "inRange 0 None error"
             ]
         },
         {
@@ -4658,7 +4658,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num",
-                "inRange 0 1000000"
+                "inRange 0 None"
             ]
         },
         {
@@ -4676,7 +4676,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num",
-                "inRange 0 1000000"
+                "inRange 0 None"
             ]
         },
         {
@@ -4694,7 +4694,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num",
-                "inRange 0 1000000"
+                "inRange 0 None"
             ]
         },
         {
@@ -4749,7 +4749,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num",
-                "inRange 0 1000000"
+                "inRange 0 None"
             ]
         },
         {
@@ -4767,7 +4767,7 @@
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num",
-                "inRange 0 1000000"
+                "inRange 0 None"
             ]
         },
         {
