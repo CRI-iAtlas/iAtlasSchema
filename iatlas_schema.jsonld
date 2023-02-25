@@ -895,7 +895,7 @@
             "rdfs:label": "hgnc",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Hgnc"
+                    "@id": "bts:hgnc"
                 }
             ],
             "schema:isPartOf": {
@@ -919,7 +919,7 @@
             "rdfs:label": "entrez",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Entrez"
+                    "@id": "bts:entrez"
                 }
             ],
             "schema:isPartOf": {
@@ -2009,10 +2009,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Cohorts",
+            "@id": "bts:cohorts",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Cohorts",
+            "rdfs:label": "cohorts",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2025,10 +2025,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -2036,10 +2036,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:cohortTagId"
+                    "@id": "bts:cohort_tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -2048,13 +2048,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:cohortTagId",
+            "@id": "bts:cohort_tag_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "cohortTagId",
+            "rdfs:label": "cohort_tag_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Cohorts"
+                    "@id": "bts:cohorts"
                 }
             ],
             "schema:isPartOf": {
@@ -2067,10 +2067,10 @@
             ]
         },
         {
-            "@id": "bts:Colocalizations",
+            "@id": "bts:colocalizations",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Colocalizations",
+            "rdfs:label": "colocalizations",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2083,16 +2083,16 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "sms:requiresDependency": [
@@ -2100,34 +2100,34 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:snpId"
+                    "@id": "bts:snp_id"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:colocDatasetId"
+                    "@id": "bts:coloc_dataset_id"
                 },
                 {
-                    "@id": "bts:qtlType"
+                    "@id": "bts:qtl_type"
                 },
                 {
-                    "@id": "bts:ecaviarPp"
+                    "@id": "bts:ecaviar_pp"
                 },
                 {
-                    "@id": "bts:plotType"
+                    "@id": "bts:plot_type"
                 },
                 {
-                    "@id": "bts:spliceLoc"
+                    "@id": "bts:splice_loc"
                 },
                 {
                     "@id": "bts:tissue"
@@ -2142,13 +2142,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:colocDatasetId",
+            "@id": "bts:coloc_dataset_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "colocDatasetId",
+            "rdfs:label": "coloc_dataset_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -2161,13 +2161,13 @@
             ]
         },
         {
-            "@id": "bts:qtlType",
+            "@id": "bts:qtl_type",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "qtlType",
+            "rdfs:label": "qtl_type",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -2175,10 +2175,10 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:SQTL"
+                    "@id": "bts:sQTL"
                 },
                 {
-                    "@id": "bts:EQTL"
+                    "@id": "bts:eQTL"
                 }
             ],
             "sms:displayName": "qtl_type",
@@ -2188,13 +2188,13 @@
             ]
         },
         {
-            "@id": "bts:ecaviarPp",
+            "@id": "bts:ecaviar_pp",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ecaviarPp",
+            "rdfs:label": "ecaviar_pp",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -2215,13 +2215,13 @@
             ]
         },
         {
-            "@id": "bts:plotType",
+            "@id": "bts:plot_type",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "plotType",
+            "rdfs:label": "plot_type",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -2229,10 +2229,10 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:3LevelPlot"
+                    "@id": "bts:3 Level Plot"
                 },
                 {
-                    "@id": "bts:ExpandedRegion"
+                    "@id": "bts:Expanded Region"
                 }
             ],
             "sms:displayName": "plot_type",
@@ -2242,13 +2242,13 @@
             ]
         },
         {
-            "@id": "bts:spliceLoc",
+            "@id": "bts:splice_loc",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "spliceLoc",
+            "rdfs:label": "splice_loc",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -2267,7 +2267,7 @@
             "rdfs:label": "tissue",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -2280,10 +2280,10 @@
             ]
         },
         {
-            "@id": "bts:CopyNumberResults",
+            "@id": "bts:copy_number_results",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "CopyNumberResults",
+            "rdfs:label": "copy_number_results",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2296,25 +2296,25 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Direction",
+            "@id": "bts:direction",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Direction",
+            "rdfs:label": "direction",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2338,10 +2338,10 @@
             ]
         },
         {
-            "@id": "bts:MeanNormal",
+            "@id": "bts:mean_normal",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "MeanNormal",
+            "rdfs:label": "mean_normal",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2357,10 +2357,10 @@
             ]
         },
         {
-            "@id": "bts:MeanCnv",
+            "@id": "bts:mean_cnv",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "MeanCnv",
+            "rdfs:label": "mean_cnv",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2376,10 +2376,10 @@
             ]
         },
         {
-            "@id": "bts:Datasets",
+            "@id": "bts:datasets",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Datasets",
+            "rdfs:label": "datasets",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2401,7 +2401,7 @@
                     "@id": "bts:display"
                 },
                 {
-                    "@id": "bts:datasetType"
+                    "@id": "bts:dataset_type"
                 },
                 {
                     "@id": "bts:id"
@@ -2410,13 +2410,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:datasetType",
+            "@id": "bts:dataset_type",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "datasetType",
+            "rdfs:label": "dataset_type",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "schema:isPartOf": {
@@ -2424,10 +2424,10 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:Analysis"
+                    "@id": "bts:analysis"
                 },
                 {
-                    "@id": "bts:Other"
+                    "@id": "bts:other"
                 }
             ],
             "sms:displayName": "dataset_type",
@@ -2437,10 +2437,10 @@
             ]
         },
         {
-            "@id": "bts:DatasetsToTags",
+            "@id": "bts:datasets_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "DatasetsToTags",
+            "rdfs:label": "datasets_to_tags",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2453,10 +2453,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -2464,10 +2464,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:tagId"
+                    "@id": "bts:tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -2476,10 +2476,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:DriverResults",
+            "@id": "bts:driver_results",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "DriverResults",
+            "rdfs:label": "driver_results",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2492,16 +2492,16 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 },
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "sms:requiresDependency": [
@@ -2509,28 +2509,28 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:mutationId"
+                    "@id": "bts:mutation_id"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:tagId"
+                    "@id": "bts:tag_id"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:pValue"
+                    "@id": "bts:p_value"
                 },
                 {
-                    "@id": "bts:foldChange"
+                    "@id": "bts:fold_change"
                 },
                 {
-                    "@id": "bts:log10PValue"
+                    "@id": "bts:log10_p_value"
                 },
                 {
-                    "@id": "bts:log10FoldChange"
+                    "@id": "bts:log10_fold_change"
                 },
                 {
                     "@id": "bts:id"
@@ -2539,10 +2539,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:GermlineGwasResult",
+            "@id": "bts:germline_gwas_result",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "GermlineGwasResult",
+            "rdfs:label": "germline_gwas_result",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2555,13 +2555,13 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 },
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 }
             ],
             "sms:requiresDependency": [
@@ -2569,19 +2569,19 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:snpId"
+                    "@id": "bts:snp_id"
                 },
                 {
                     "@id": "bts:maf"
                 },
                 {
-                    "@id": "bts:pValue"
+                    "@id": "bts:p_value"
                 },
                 {
                     "@id": "bts:id"
@@ -2596,7 +2596,7 @@
             "rdfs:label": "maf",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:GermlineGwasResult"
+                    "@id": "bts:germline_gwas_result"
                 }
             ],
             "schema:isPartOf": {
@@ -2609,10 +2609,10 @@
             ]
         },
         {
-            "@id": "bts:Edges",
+            "@id": "bts:edges",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Edges",
+            "rdfs:label": "edges",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2628,10 +2628,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:node1Id"
+                    "@id": "bts:node_1_id"
                 },
                 {
-                    "@id": "bts:node2Id"
+                    "@id": "bts:node_2_id"
                 },
                 {
                     "@id": "bts:name"
@@ -2649,13 +2649,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:node1Id",
+            "@id": "bts:node_1_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "node1Id",
+            "rdfs:label": "node_1_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Edges"
+                    "@id": "bts:edges"
                 }
             ],
             "schema:isPartOf": {
@@ -2668,13 +2668,13 @@
             ]
         },
         {
-            "@id": "bts:node2Id",
+            "@id": "bts:node_2_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "node2Id",
+            "rdfs:label": "node_2_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Edges"
+                    "@id": "bts:edges"
                 }
             ],
             "schema:isPartOf": {
@@ -2687,10 +2687,10 @@
             ]
         },
         {
-            "@id": "bts:Features",
+            "@id": "bts:features",
             "@type": "rdfs:Class",
             "rdfs:comment": "A result of an assay with a numeric result",
-            "rdfs:label": "Features",
+            "rdfs:label": "features",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2721,7 +2721,7 @@
                     "@id": "bts:class"
                 },
                 {
-                    "@id": "bts:methodTag"
+                    "@id": "bts:method_tag"
                 },
                 {
                     "@id": "bts:id"
@@ -2736,7 +2736,7 @@
             "rdfs:label": "order",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -2756,7 +2756,7 @@
             "rdfs:label": "unit",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -2773,7 +2773,7 @@
                     "@id": "bts:Score"
                 },
                 {
-                    "@id": "bts:PerMegabase"
+                    "@id": "bts:Per Megabase"
                 },
                 {
                     "@id": "bts:Year"
@@ -2792,7 +2792,7 @@
             "rdfs:label": "class",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -2805,13 +2805,13 @@
             ]
         },
         {
-            "@id": "bts:methodTag",
+            "@id": "bts:method_tag",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "methodTag",
+            "rdfs:label": "method_tag",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -2824,10 +2824,10 @@
             ]
         },
         {
-            "@id": "bts:FeaturesToSamples",
+            "@id": "bts:features_to_samples",
             "@type": "rdfs:Class",
             "rdfs:comment": "feature to sample relationship",
-            "rdfs:label": "FeaturesToSamples",
+            "rdfs:label": "features_to_samples",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2840,10 +2840,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 }
             ],
             "sms:requiresDependency": [
@@ -2851,13 +2851,13 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:sampleId"
+                    "@id": "bts:sample_id"
                 },
                 {
-                    "@id": "bts:featureToSampleValue"
+                    "@id": "bts:feature_to_sample_value"
                 },
                 {
                     "@id": "bts:id"
@@ -2866,13 +2866,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:featureToSampleValue",
+            "@id": "bts:feature_to_sample_value",
             "@type": "rdf:Property",
             "rdfs:comment": "The value of the feature for the sample",
-            "rdfs:label": "featureToSampleValue",
+            "rdfs:label": "feature_to_sample_value",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:FeaturesToSamples"
+                    "@id": "bts:features_to_samples"
                 }
             ],
             "schema:isPartOf": {
@@ -2885,10 +2885,10 @@
             ]
         },
         {
-            "@id": "bts:Genes",
+            "@id": "bts:genes",
             "@type": "rdfs:Class",
             "rdfs:comment": "A gene",
-            "rdfs:label": "Genes",
+            "rdfs:label": "genes",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -2910,31 +2910,31 @@
                     "@id": "bts:hgnc"
                 },
                 {
-                    "@id": "bts:geneFamily"
+                    "@id": "bts:gene_family"
                 },
                 {
-                    "@id": "bts:geneFunction"
+                    "@id": "bts:gene_function"
                 },
                 {
-                    "@id": "bts:immuneCheckpoint"
+                    "@id": "bts:immune_checkpoint"
                 },
                 {
-                    "@id": "bts:genePathway"
+                    "@id": "bts:gene_pathway"
                 },
                 {
-                    "@id": "bts:superCategory"
+                    "@id": "bts:super_category"
                 },
                 {
-                    "@id": "bts:therapyType"
+                    "@id": "bts:therapy_type"
                 },
                 {
                     "@id": "bts:description"
                 },
                 {
-                    "@id": "bts:ioLandscapeName"
+                    "@id": "bts:io_landscape_name"
                 },
                 {
-                    "@id": "bts:friendlyName"
+                    "@id": "bts:friendly_name"
                 },
                 {
                     "@id": "bts:id"
@@ -2943,13 +2943,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:geneFamily",
+            "@id": "bts:gene_family",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "geneFamily",
+            "rdfs:label": "gene_family",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -2960,13 +2960,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:geneFunction",
+            "@id": "bts:gene_function",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "geneFunction",
+            "rdfs:label": "gene_function",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -2979,13 +2979,13 @@
             ]
         },
         {
-            "@id": "bts:immuneCheckpoint",
+            "@id": "bts:immune_checkpoint",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "immuneCheckpoint",
+            "rdfs:label": "immune_checkpoint",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -2998,13 +2998,13 @@
             ]
         },
         {
-            "@id": "bts:genePathway",
+            "@id": "bts:gene_pathway",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "genePathway",
+            "rdfs:label": "gene_pathway",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -3017,13 +3017,13 @@
             ]
         },
         {
-            "@id": "bts:superCategory",
+            "@id": "bts:super_category",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "superCategory",
+            "rdfs:label": "super_category",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -3036,13 +3036,13 @@
             ]
         },
         {
-            "@id": "bts:therapyType",
+            "@id": "bts:therapy_type",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "therapyType",
+            "rdfs:label": "therapy_type",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -3055,13 +3055,13 @@
             ]
         },
         {
-            "@id": "bts:ioLandscapeName",
+            "@id": "bts:io_landscape_name",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ioLandscapeName",
+            "rdfs:label": "io_landscape_name",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -3074,13 +3074,13 @@
             ]
         },
         {
-            "@id": "bts:friendlyName",
+            "@id": "bts:friendly_name",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "friendlyName",
+            "rdfs:label": "friendly_name",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "schema:isPartOf": {
@@ -3093,10 +3093,10 @@
             ]
         },
         {
-            "@id": "bts:GeneSets",
+            "@id": "bts:gene_sets",
             "@type": "rdfs:Class",
             "rdfs:comment": "A set of genes",
-            "rdfs:label": "GeneSets",
+            "rdfs:label": "gene_sets",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3124,10 +3124,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:GenesToGeneSets",
+            "@id": "bts:genes_to_gene_sets",
             "@type": "rdfs:Class",
             "rdfs:comment": "Gene and gene set relationship",
-            "rdfs:label": "GenesToGeneSets",
+            "rdfs:label": "genes_to_gene_sets",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3140,10 +3140,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:GeneSets"
+                    "@id": "bts:gene_sets"
                 }
             ],
             "sms:requiresDependency": [
@@ -3151,10 +3151,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:geneSetId"
+                    "@id": "bts:gene_set_id"
                 },
                 {
                     "@id": "bts:id"
@@ -3163,10 +3163,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:GenesToSamples",
+            "@id": "bts:genes_to_samples",
             "@type": "rdfs:Class",
             "rdfs:comment": "gene to sample relationship",
-            "rdfs:label": "GenesToSamples",
+            "rdfs:label": "genes_to_samples",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3179,10 +3179,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 }
             ],
             "sms:requiresDependency": [
@@ -3190,13 +3190,13 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:rnaSeqExpression"
+                    "@id": "bts:rna_seq_expression"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:sampleId"
+                    "@id": "bts:sample_id"
                 },
                 {
                     "@id": "bts:id"
@@ -3205,13 +3205,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:rnaSeqExpression",
+            "@id": "bts:rna_seq_expression",
             "@type": "rdf:Property",
             "rdfs:comment": "Bulk RNA expression value",
-            "rdfs:label": "rnaSeqExpression",
+            "rdfs:label": "rna_seq_expression",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:GenesToSamples"
+                    "@id": "bts:genes_to_samples"
                 }
             ],
             "schema:isPartOf": {
@@ -3225,10 +3225,10 @@
             ]
         },
         {
-            "@id": "bts:HeritibilityResults",
+            "@id": "bts:heritibility_results",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "HeritibilityResults",
+            "rdfs:label": "heritibility_results",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3241,10 +3241,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "sms:requiresDependency": [
@@ -3255,13 +3255,13 @@
                     "@id": "bts:cluster"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:pValue"
+                    "@id": "bts:p_value"
                 },
                 {
                     "@id": "bts:fdr"
@@ -3285,7 +3285,7 @@
             "rdfs:label": "cluster",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 }
             ],
             "schema:isPartOf": {
@@ -3298,10 +3298,10 @@
             ]
         },
         {
-            "@id": "bts:Mutations",
+            "@id": "bts:mutations",
             "@type": "rdfs:Class",
             "rdfs:comment": "A gene mutation",
-            "rdfs:label": "Mutations",
+            "rdfs:label": "mutations",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3314,7 +3314,7 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 }
             ],
             "sms:requiresDependency": [
@@ -3325,13 +3325,13 @@
                     "@id": "bts:name"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:mutationType"
+                    "@id": "bts:mutation_type"
                 },
                 {
-                    "@id": "bts:mutationCode"
+                    "@id": "bts:mutation_code"
                 },
                 {
                     "@id": "bts:id"
@@ -3340,13 +3340,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:mutationCode",
+            "@id": "bts:mutation_code",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "mutationCode",
+            "rdfs:label": "mutation_code",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -3359,13 +3359,13 @@
             ]
         },
         {
-            "@id": "bts:mutationType",
+            "@id": "bts:mutation_type",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "mutationType",
+            "rdfs:label": "mutation_type",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -3373,7 +3373,7 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:Drivermutation"
+                    "@id": "bts:driver mutation"
                 }
             ],
             "sms:displayName": "mutation_type",
@@ -3383,10 +3383,10 @@
             ]
         },
         {
-            "@id": "bts:Nodes",
+            "@id": "bts:nodes",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Nodes",
+            "rdfs:label": "nodes",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3417,13 +3417,13 @@
                     "@id": "bts:y"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
                     "@id": "bts:id"
@@ -3438,7 +3438,7 @@
             "rdfs:label": "x",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -3457,7 +3457,7 @@
             "rdfs:label": "y",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -3470,10 +3470,10 @@
             ]
         },
         {
-            "@id": "bts:Network",
+            "@id": "bts:network",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Network",
+            "rdfs:label": "network",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3484,10 +3484,10 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:ExtracellularNetwork"
+                    "@id": "bts:Extracellular Network"
                 },
                 {
-                    "@id": "bts:CellimageNetwork"
+                    "@id": "bts:Cellimage Network"
                 }
             ],
             "sms:displayName": "network",
@@ -3497,10 +3497,10 @@
             ]
         },
         {
-            "@id": "bts:NodeGeneId",
+            "@id": "bts:node_gene_id",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "NodeGeneId",
+            "rdfs:label": "node_gene_id",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3516,10 +3516,10 @@
             ]
         },
         {
-            "@id": "bts:NodeFeatureId",
+            "@id": "bts:node_feature_id",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "NodeFeatureId",
+            "rdfs:label": "node_feature_id",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3535,10 +3535,10 @@
             ]
         },
         {
-            "@id": "bts:NodesToTags",
+            "@id": "bts:nodes_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "NodesToTags",
+            "rdfs:label": "nodes_to_tags",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3551,10 +3551,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -3562,10 +3562,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:nodeId"
+                    "@id": "bts:node_id"
                 },
                 {
-                    "@id": "bts:tagId"
+                    "@id": "bts:tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -3574,10 +3574,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Patients",
+            "@id": "bts:patients",
             "@type": "rdfs:Class",
             "rdfs:comment": "A patient",
-            "rdfs:label": "Patients",
+            "rdfs:label": "patients",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3596,7 +3596,7 @@
                     "@id": "bts:name"
                 },
                 {
-                    "@id": "bts:ageAtDiagnosis"
+                    "@id": "bts:age_at_diagnosis"
                 },
                 {
                     "@id": "bts:ethnicity"
@@ -3620,13 +3620,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ageAtDiagnosis",
+            "@id": "bts:age_at_diagnosis",
             "@type": "rdf:Property",
             "rdfs:comment": "The age of the patient at diagnosis",
-            "rdfs:label": "ageAtDiagnosis",
+            "rdfs:label": "age_at_diagnosis",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -3646,7 +3646,7 @@
             "rdfs:label": "ethnicity",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -3654,10 +3654,10 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:Nothispanicorlatino"
+                    "@id": "bts:not hispanic or latino"
                 },
                 {
-                    "@id": "bts:Hispanicorlatino"
+                    "@id": "bts:hispanic or latino"
                 }
             ],
             "sms:displayName": "ethnicity",
@@ -3673,7 +3673,7 @@
             "rdfs:label": "gender",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -3681,10 +3681,10 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:Female"
+                    "@id": "bts:female"
                 },
                 {
-                    "@id": "bts:Male"
+                    "@id": "bts:male"
                 }
             ],
             "sms:displayName": "gender",
@@ -3700,7 +3700,7 @@
             "rdfs:label": "height",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -3720,7 +3720,7 @@
             "rdfs:label": "race",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -3728,19 +3728,19 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:White"
+                    "@id": "bts:white"
                 },
                 {
-                    "@id": "bts:Blackorafricanamerican"
+                    "@id": "bts:black or african american"
                 },
                 {
-                    "@id": "bts:Asian"
+                    "@id": "bts:asian"
                 },
                 {
-                    "@id": "bts:Nativehawaiianorotherpacificislander"
+                    "@id": "bts:native hawaiian or other pacific islander"
                 },
                 {
-                    "@id": "bts:Americanindianoralaskanative"
+                    "@id": "bts:american indian or alaska native"
                 }
             ],
             "sms:displayName": "race",
@@ -3756,7 +3756,7 @@
             "rdfs:label": "weight",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -3770,10 +3770,10 @@
             ]
         },
         {
-            "@id": "bts:Publications",
+            "@id": "bts:publications",
             "@type": "rdfs:Class",
             "rdfs:comment": "A publication",
-            "rdfs:label": "Publications",
+            "rdfs:label": "publications",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -3792,16 +3792,16 @@
                     "@id": "bts:name"
                 },
                 {
-                    "@id": "bts:pubmedId"
+                    "@id": "bts:pubmed_id"
                 },
                 {
-                    "@id": "bts:doId"
+                    "@id": "bts:do_id"
                 },
                 {
                     "@id": "bts:journal"
                 },
                 {
-                    "@id": "bts:firstAuthorLastName"
+                    "@id": "bts:first_author_last_name"
                 },
                 {
                     "@id": "bts:year"
@@ -3816,13 +3816,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:doId",
+            "@id": "bts:do_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "doId",
+            "rdfs:label": "do_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "schema:isPartOf": {
@@ -3833,13 +3833,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:pubmedId",
+            "@id": "bts:pubmed_id",
             "@type": "rdf:Property",
             "rdfs:comment": "The pubmed id",
-            "rdfs:label": "pubmedId",
+            "rdfs:label": "pubmed_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "schema:isPartOf": {
@@ -3858,7 +3858,7 @@
             "rdfs:label": "journal",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "schema:isPartOf": {
@@ -3871,13 +3871,13 @@
             ]
         },
         {
-            "@id": "bts:firstAuthorLastName",
+            "@id": "bts:first_author_last_name",
             "@type": "rdf:Property",
             "rdfs:comment": "The first authors last name",
-            "rdfs:label": "firstAuthorLastName",
+            "rdfs:label": "first_author_last_name",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "schema:isPartOf": {
@@ -3890,10 +3890,10 @@
             ]
         },
         {
-            "@id": "bts:PublicationsToGenesToGeneSets",
+            "@id": "bts:publications_to_genes_to_gene_sets",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "PublicationsToGenesToGeneSets",
+            "rdfs:label": "publications_to_genes_to_gene_sets",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3906,13 +3906,13 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:GeneSets"
+                    "@id": "bts:gene_sets"
                 },
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "sms:requiresDependency": [
@@ -3920,13 +3920,13 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:geneId"
+                    "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:geneSetId"
+                    "@id": "bts:gene_set_id"
                 },
                 {
-                    "@id": "bts:publicationId"
+                    "@id": "bts:publication_id"
                 },
                 {
                     "@id": "bts:id"
@@ -3935,10 +3935,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:PublicationsToTags",
+            "@id": "bts:publications_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "PublicationsToTags",
+            "rdfs:label": "publications_to_tags",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3951,10 +3951,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -3962,10 +3962,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:publicationId"
+                    "@id": "bts:publication_id"
                 },
                 {
-                    "@id": "bts:tagId"
+                    "@id": "bts:tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -3974,10 +3974,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:RareVariantAssociationPathways",
+            "@id": "bts:rare_variant_association_pathways",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "RareVariantAssociationPathways",
+            "rdfs:label": "rare_variant_association_pathways",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3990,10 +3990,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "sms:requiresDependency": [
@@ -4001,13 +4001,13 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:featureId"
+                    "@id": "bts:feature_id"
                 },
                 {
-                    "@id": "bts:datasetId"
+                    "@id": "bts:dataset_id"
                 },
                 {
-                    "@id": "bts:pValue"
+                    "@id": "bts:p_value"
                 },
                 {
                     "@id": "bts:min"
@@ -4019,10 +4019,10 @@
                     "@id": "bts:mean"
                 },
                 {
-                    "@id": "bts:nMutant"
+                    "@id": "bts:n_mutant"
                 },
                 {
-                    "@id": "bts:nTotal"
+                    "@id": "bts:n_total"
                 },
                 {
                     "@id": "bts:pathway"
@@ -4049,7 +4049,7 @@
             "rdfs:label": "pathway",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4068,7 +4068,7 @@
             "rdfs:label": "q1",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4087,7 +4087,7 @@
             "rdfs:label": "q2",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4106,7 +4106,7 @@
             "rdfs:label": "q3",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4119,10 +4119,10 @@
             ]
         },
         {
-            "@id": "bts:Samples",
+            "@id": "bts:samples",
             "@type": "rdfs:Class",
             "rdfs:comment": "A patients specific sample",
-            "rdfs:label": "Samples",
+            "rdfs:label": "samples",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -4135,7 +4135,7 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "sms:requiresDependency": [
@@ -4146,7 +4146,7 @@
                     "@id": "bts:name"
                 },
                 {
-                    "@id": "bts:patientId"
+                    "@id": "bts:patient_id"
                 },
                 {
                     "@id": "bts:id"
@@ -4155,10 +4155,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:SamplesToMutations",
+            "@id": "bts:samples_to_mutations",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "SamplesToMutations",
+            "rdfs:label": "samples_to_mutations",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -4171,10 +4171,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 },
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 }
             ],
             "sms:requiresDependency": [
@@ -4182,13 +4182,13 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:sampleId"
+                    "@id": "bts:sample_id"
                 },
                 {
-                    "@id": "bts:mutationId"
+                    "@id": "bts:mutation_id"
                 },
                 {
-                    "@id": "bts:mutationStatus"
+                    "@id": "bts:mutation_status"
                 },
                 {
                     "@id": "bts:id"
@@ -4197,13 +4197,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:mutationStatus",
+            "@id": "bts:mutation_status",
             "@type": "rdf:Property",
             "rdfs:comment": "The status of the mutation for the sample",
-            "rdfs:label": "mutationStatus",
+            "rdfs:label": "mutation_status",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:SamplesToMutations"
+                    "@id": "bts:samples_to_mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -4224,10 +4224,10 @@
             ]
         },
         {
-            "@id": "bts:SamplesToTags",
+            "@id": "bts:samples_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "SamplesToTags",
+            "rdfs:label": "samples_to_tags",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -4240,10 +4240,10 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -4251,10 +4251,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:sampleId"
+                    "@id": "bts:sample_id"
                 },
                 {
-                    "@id": "bts:tagId"
+                    "@id": "bts:tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -4263,10 +4263,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Slides",
+            "@id": "bts:slides",
             "@type": "rdfs:Class",
             "rdfs:comment": "A physical slide",
-            "rdfs:label": "Slides",
+            "rdfs:label": "slides",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -4279,7 +4279,7 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "sms:requiresDependency": [
@@ -4296,7 +4296,7 @@
                     "@id": "bts:description"
                 },
                 {
-                    "@id": "bts:patientId"
+                    "@id": "bts:patient_id"
                 },
                 {
                     "@id": "bts:id"
@@ -4305,10 +4305,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Snps",
+            "@id": "bts:snps",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Snps",
+            "rdfs:label": "snps",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -4348,7 +4348,7 @@
             "rdfs:label": "rsid",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 }
             ],
             "schema:isPartOf": {
@@ -4367,7 +4367,7 @@
             "rdfs:label": "chr",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 }
             ],
             "schema:isPartOf": {
@@ -4386,7 +4386,7 @@
             "rdfs:label": "bp",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 }
             ],
             "schema:isPartOf": {
@@ -4399,10 +4399,10 @@
             ]
         },
         {
-            "@id": "bts:Tags",
+            "@id": "bts:tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "A way to tag other components",
-            "rdfs:label": "Tags",
+            "rdfs:label": "tags",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -4430,7 +4430,7 @@
                     "@id": "bts:color"
                 },
                 {
-                    "@id": "bts:tagType"
+                    "@id": "bts:tag_type"
                 },
                 {
                     "@id": "bts:id"
@@ -4439,13 +4439,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:tagType",
+            "@id": "bts:tag_type",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "tagType",
+            "rdfs:label": "tag_type",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4453,13 +4453,13 @@
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:Group"
+                    "@id": "bts:group"
                 },
                 {
-                    "@id": "bts:ParentGroup"
+                    "@id": "bts:parent_group"
                 },
                 {
-                    "@id": "bts:MetaGroup"
+                    "@id": "bts:meta_group"
                 }
             ],
             "sms:displayName": "tag_type",
@@ -4469,10 +4469,10 @@
             ]
         },
         {
-            "@id": "bts:TagsToTags",
+            "@id": "bts:tags_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "TagsToTags",
+            "rdfs:label": "tags_to_tags",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -4485,7 +4485,7 @@
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -4493,10 +4493,10 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:tagId"
+                    "@id": "bts:tag_id"
                 },
                 {
-                    "@id": "bts:parentTagId"
+                    "@id": "bts:parent_tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -4505,13 +4505,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:parentTagId",
+            "@id": "bts:parent_tag_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "parentTagId",
+            "rdfs:label": "parent_tag_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:TagsToTags"
+                    "@id": "bts:tags_to_tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4530,91 +4530,91 @@
             "rdfs:label": "id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Cohorts"
+                    "@id": "bts:cohorts"
                 },
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 },
                 {
-                    "@id": "bts:DatasetsToTags"
+                    "@id": "bts:datasets_to_tags"
                 },
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:GermlineGwasResult"
+                    "@id": "bts:germline_gwas_result"
                 },
                 {
-                    "@id": "bts:Edges"
+                    "@id": "bts:edges"
                 },
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:FeaturesToSamples"
+                    "@id": "bts:features_to_samples"
                 },
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:GeneSets"
+                    "@id": "bts:gene_sets"
                 },
                 {
-                    "@id": "bts:GenesToGeneSets"
+                    "@id": "bts:genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:GenesToSamples"
+                    "@id": "bts:genes_to_samples"
                 },
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 },
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:NodesToTags"
+                    "@id": "bts:nodes_to_tags"
                 },
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 },
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 },
                 {
-                    "@id": "bts:PublicationsToGenesToGeneSets"
+                    "@id": "bts:publications_to_genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:PublicationsToTags"
+                    "@id": "bts:publications_to_tags"
                 },
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 },
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 },
                 {
-                    "@id": "bts:SamplesToMutations"
+                    "@id": "bts:samples_to_mutations"
                 },
                 {
-                    "@id": "bts:SamplesToTags"
+                    "@id": "bts:samples_to_tags"
                 },
                 {
-                    "@id": "bts:Slides"
+                    "@id": "bts:slides"
                 },
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 },
                 {
-                    "@id": "bts:TagsToTags"
+                    "@id": "bts:tags_to_tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4633,43 +4633,43 @@
             "rdfs:label": "name",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Cohorts"
+                    "@id": "bts:cohorts"
                 },
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 },
                 {
-                    "@id": "bts:Edges"
+                    "@id": "bts:edges"
                 },
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:GeneSets"
+                    "@id": "bts:gene_sets"
                 },
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 },
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 },
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 },
                 {
-                    "@id": "bts:Slides"
+                    "@id": "bts:slides"
                 },
                 {
-                    "@id": "bts:Snps"
+                    "@id": "bts:snps"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4688,19 +4688,19 @@
             "rdfs:label": "display",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 },
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 },
                 {
-                    "@id": "bts:GeneSets"
+                    "@id": "bts:gene_sets"
                 },
                 {
-                    "@id": "bts:Slides"
+                    "@id": "bts:slides"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4719,13 +4719,13 @@
             "rdfs:label": "description",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Genes"
+                    "@id": "bts:genes"
                 },
                 {
-                    "@id": "bts:Slides"
+                    "@id": "bts:slides"
                 },
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4744,7 +4744,7 @@
             "rdfs:label": "color",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -4763,10 +4763,10 @@
             "rdfs:label": "link",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "schema:isPartOf": {
@@ -4785,7 +4785,7 @@
             "rdfs:label": "year",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Publications"
+                    "@id": "bts:publications"
                 }
             ],
             "schema:isPartOf": {
@@ -4804,10 +4804,10 @@
             "rdfs:label": "label",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Edges"
+                    "@id": "bts:edges"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -4826,10 +4826,10 @@
             "rdfs:label": "score",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Edges"
+                    "@id": "bts:edges"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -4842,22 +4842,22 @@
             ]
         },
         {
-            "@id": "bts:pValue",
+            "@id": "bts:p_value",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "pValue",
+            "rdfs:label": "p_value",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:GermlineGwasResult"
+                    "@id": "bts:germline_gwas_result"
                 },
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 },
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4871,13 +4871,13 @@
             ]
         },
         {
-            "@id": "bts:foldChange",
+            "@id": "bts:fold_change",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "foldChange",
+            "rdfs:label": "fold_change",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 }
             ],
             "schema:isPartOf": {
@@ -4890,13 +4890,13 @@
             ]
         },
         {
-            "@id": "bts:log10PValue",
+            "@id": "bts:log10_p_value",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "log10PValue",
+            "rdfs:label": "log10_p_value",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 }
             ],
             "schema:isPartOf": {
@@ -4909,13 +4909,13 @@
             ]
         },
         {
-            "@id": "bts:log10FoldChange",
+            "@id": "bts:log10_fold_change",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "log10FoldChange",
+            "rdfs:label": "log10_fold_change",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 }
             ],
             "schema:isPartOf": {
@@ -4928,10 +4928,10 @@
             ]
         },
         {
-            "@id": "bts:NWildtype",
+            "@id": "bts:n_wildtype",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "NWildtype",
+            "rdfs:label": "n_wildtype",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -4948,13 +4948,13 @@
             ]
         },
         {
-            "@id": "bts:nMutant",
+            "@id": "bts:n_mutant",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "nMutant",
+            "rdfs:label": "n_mutant",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4968,13 +4968,13 @@
             ]
         },
         {
-            "@id": "bts:nTotal",
+            "@id": "bts:n_total",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "nTotal",
+            "rdfs:label": "n_total",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -4988,10 +4988,10 @@
             ]
         },
         {
-            "@id": "bts:TStat",
+            "@id": "bts:t_stat",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "TStat",
+            "rdfs:label": "t_stat",
             "rdfs:subClassOf": [
                 {
                     "@id": "schema:Thing"
@@ -5013,7 +5013,7 @@
             "rdfs:label": "fdr",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5033,7 +5033,7 @@
             "rdfs:label": "variance",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5053,7 +5053,7 @@
             "rdfs:label": "se",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5073,7 +5073,7 @@
             "rdfs:label": "mean",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -5092,7 +5092,7 @@
             "rdfs:label": "min",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -5111,7 +5111,7 @@
             "rdfs:label": "max",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -5124,31 +5124,31 @@
             ]
         },
         {
-            "@id": "bts:featureId",
+            "@id": "bts:feature_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "featureId",
+            "rdfs:label": "feature_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:GermlineGwasResult"
+                    "@id": "bts:germline_gwas_result"
                 },
                 {
-                    "@id": "bts:FeaturesToSamples"
+                    "@id": "bts:features_to_samples"
                 },
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -5161,31 +5161,31 @@
             ]
         },
         {
-            "@id": "bts:geneId",
+            "@id": "bts:gene_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "geneId",
+            "rdfs:label": "gene_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:GenesToGeneSets"
+                    "@id": "bts:genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:GenesToSamples"
+                    "@id": "bts:genes_to_samples"
                 },
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:PublicationsToGenesToGeneSets"
+                    "@id": "bts:publications_to_genes_to_gene_sets"
                 }
             ],
             "schema:isPartOf": {
@@ -5198,16 +5198,16 @@
             ]
         },
         {
-            "@id": "bts:geneSetId",
+            "@id": "bts:gene_set_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "geneSetId",
+            "rdfs:label": "gene_set_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:GenesToGeneSets"
+                    "@id": "bts:genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:PublicationsToGenesToGeneSets"
+                    "@id": "bts:publications_to_genes_to_gene_sets"
                 }
             ],
             "schema:isPartOf": {
@@ -5220,16 +5220,16 @@
             ]
         },
         {
-            "@id": "bts:patientId",
+            "@id": "bts:patient_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "patientId",
+            "rdfs:label": "patient_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Samples"
+                    "@id": "bts:samples"
                 },
                 {
-                    "@id": "bts:Slides"
+                    "@id": "bts:slides"
                 }
             ],
             "schema:isPartOf": {
@@ -5242,16 +5242,16 @@
             ]
         },
         {
-            "@id": "bts:publicationId",
+            "@id": "bts:publication_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "publicationId",
+            "rdfs:label": "publication_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:PublicationsToGenesToGeneSets"
+                    "@id": "bts:publications_to_genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:PublicationsToTags"
+                    "@id": "bts:publications_to_tags"
                 }
             ],
             "schema:isPartOf": {
@@ -5264,22 +5264,22 @@
             ]
         },
         {
-            "@id": "bts:sampleId",
+            "@id": "bts:sample_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "sampleId",
+            "rdfs:label": "sample_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:FeaturesToSamples"
+                    "@id": "bts:features_to_samples"
                 },
                 {
-                    "@id": "bts:GenesToSamples"
+                    "@id": "bts:genes_to_samples"
                 },
                 {
-                    "@id": "bts:SamplesToMutations"
+                    "@id": "bts:samples_to_mutations"
                 },
                 {
-                    "@id": "bts:SamplesToTags"
+                    "@id": "bts:samples_to_tags"
                 }
             ],
             "schema:isPartOf": {
@@ -5292,16 +5292,16 @@
             ]
         },
         {
-            "@id": "bts:mutationId",
+            "@id": "bts:mutation_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "mutationId",
+            "rdfs:label": "mutation_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:SamplesToMutations"
+                    "@id": "bts:samples_to_mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -5314,28 +5314,28 @@
             ]
         },
         {
-            "@id": "bts:tagId",
+            "@id": "bts:tag_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "tagId",
+            "rdfs:label": "tag_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:DatasetsToTags"
+                    "@id": "bts:datasets_to_tags"
                 },
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:NodesToTags"
+                    "@id": "bts:nodes_to_tags"
                 },
                 {
-                    "@id": "bts:PublicationsToTags"
+                    "@id": "bts:publications_to_tags"
                 },
                 {
-                    "@id": "bts:SamplesToTags"
+                    "@id": "bts:samples_to_tags"
                 },
                 {
-                    "@id": "bts:TagsToTags"
+                    "@id": "bts:tags_to_tags"
                 }
             ],
             "schema:isPartOf": {
@@ -5348,34 +5348,34 @@
             ]
         },
         {
-            "@id": "bts:datasetId",
+            "@id": "bts:dataset_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "datasetId",
+            "rdfs:label": "dataset_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Cohorts"
+                    "@id": "bts:cohorts"
                 },
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:DatasetsToTags"
+                    "@id": "bts:datasets_to_tags"
                 },
                 {
-                    "@id": "bts:DriverResults"
+                    "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:GermlineGwasResult"
+                    "@id": "bts:germline_gwas_result"
                 },
                 {
-                    "@id": "bts:HeritibilityResults"
+                    "@id": "bts:heritibility_results"
                 },
                 {
-                    "@id": "bts:Nodes"
+                    "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:RareVariantAssociationPathways"
+                    "@id": "bts:rare_variant_association_pathways"
                 }
             ],
             "schema:isPartOf": {
@@ -5388,13 +5388,13 @@
             ]
         },
         {
-            "@id": "bts:nodeId",
+            "@id": "bts:node_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "nodeId",
+            "rdfs:label": "node_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:NodesToTags"
+                    "@id": "bts:nodes_to_tags"
                 }
             ],
             "schema:isPartOf": {
@@ -5407,16 +5407,16 @@
             ]
         },
         {
-            "@id": "bts:snpId",
+            "@id": "bts:snp_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "snpId",
+            "rdfs:label": "snp_id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:GermlineGwasResult"
+                    "@id": "bts:germline_gwas_result"
                 }
             ],
             "schema:isPartOf": {
@@ -5429,13 +5429,13 @@
             ]
         },
         {
-            "@id": "bts:SQTL",
+            "@id": "bts:sQTL",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "SQTL",
+            "rdfs:label": "sQTL",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -5446,13 +5446,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:EQTL",
+            "@id": "bts:eQTL",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "EQTL",
+            "rdfs:label": "eQTL",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -5469,7 +5469,7 @@
             "rdfs:label": "C1",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -5486,7 +5486,7 @@
             "rdfs:label": "C2",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -5497,13 +5497,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:3LevelPlot",
+            "@id": "bts:3 Level Plot",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "3LevelPlot",
+            "rdfs:label": "3 Level Plot",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -5514,13 +5514,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ExpandedRegion",
+            "@id": "bts:Expanded Region",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ExpandedRegion",
+            "rdfs:label": "Expanded Region",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Colocalizations"
+                    "@id": "bts:colocalizations"
                 }
             ],
             "schema:isPartOf": {
@@ -5537,7 +5537,7 @@
             "rdfs:label": "Amp",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Direction"
+                    "@id": "bts:direction"
                 }
             ],
             "schema:isPartOf": {
@@ -5554,7 +5554,7 @@
             "rdfs:label": "Del",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Direction"
+                    "@id": "bts:direction"
                 }
             ],
             "schema:isPartOf": {
@@ -5565,13 +5565,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Analysis",
+            "@id": "bts:analysis",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Analysis",
+            "rdfs:label": "analysis",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "schema:isPartOf": {
@@ -5582,13 +5582,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Other",
+            "@id": "bts:other",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Other",
+            "rdfs:label": "other",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Datasets"
+                    "@id": "bts:datasets"
                 }
             ],
             "schema:isPartOf": {
@@ -5605,7 +5605,7 @@
             "rdfs:label": "Fraction",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -5622,7 +5622,7 @@
             "rdfs:label": "Count",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -5639,7 +5639,7 @@
             "rdfs:label": "Score",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -5650,13 +5650,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:PerMegabase",
+            "@id": "bts:Per Megabase",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "PerMegabase",
+            "rdfs:label": "Per Megabase",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -5673,7 +5673,7 @@
             "rdfs:label": "Year",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Features"
+                    "@id": "bts:features"
                 }
             ],
             "schema:isPartOf": {
@@ -5684,13 +5684,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Drivermutation",
+            "@id": "bts:driver mutation",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Drivermutation",
+            "rdfs:label": "driver mutation",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Mutations"
+                    "@id": "bts:mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -5701,13 +5701,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ExtracellularNetwork",
+            "@id": "bts:Extracellular Network",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ExtracellularNetwork",
+            "rdfs:label": "Extracellular Network",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Network"
+                    "@id": "bts:network"
                 }
             ],
             "schema:isPartOf": {
@@ -5718,13 +5718,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:CellimageNetwork",
+            "@id": "bts:Cellimage Network",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "CellimageNetwork",
+            "rdfs:label": "Cellimage Network",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Network"
+                    "@id": "bts:network"
                 }
             ],
             "schema:isPartOf": {
@@ -5735,13 +5735,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Nothispanicorlatino",
+            "@id": "bts:not hispanic or latino",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Nothispanicorlatino",
+            "rdfs:label": "not hispanic or latino",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5752,13 +5752,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Hispanicorlatino",
+            "@id": "bts:hispanic or latino",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Hispanicorlatino",
+            "rdfs:label": "hispanic or latino",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5769,13 +5769,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Female",
+            "@id": "bts:female",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Female",
+            "rdfs:label": "female",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5786,13 +5786,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Male",
+            "@id": "bts:male",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Male",
+            "rdfs:label": "male",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5803,13 +5803,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:White",
+            "@id": "bts:white",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "White",
+            "rdfs:label": "white",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5820,13 +5820,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Blackorafricanamerican",
+            "@id": "bts:black or african american",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Blackorafricanamerican",
+            "rdfs:label": "black or african american",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5837,13 +5837,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Asian",
+            "@id": "bts:asian",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Asian",
+            "rdfs:label": "asian",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5854,13 +5854,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Nativehawaiianorotherpacificislander",
+            "@id": "bts:native hawaiian or other pacific islander",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Nativehawaiianorotherpacificislander",
+            "rdfs:label": "native hawaiian or other pacific islander",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5871,13 +5871,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Americanindianoralaskanative",
+            "@id": "bts:american indian or alaska native",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Americanindianoralaskanative",
+            "rdfs:label": "american indian or alaska native",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patients"
+                    "@id": "bts:patients"
                 }
             ],
             "schema:isPartOf": {
@@ -5894,7 +5894,7 @@
             "rdfs:label": "Wt",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SamplesToMutations"
+                    "@id": "bts:samples_to_mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -5911,7 +5911,7 @@
             "rdfs:label": "Mut",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SamplesToMutations"
+                    "@id": "bts:samples_to_mutations"
                 }
             ],
             "schema:isPartOf": {
@@ -5922,13 +5922,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Group",
+            "@id": "bts:group",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Group",
+            "rdfs:label": "group",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -5939,13 +5939,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ParentGroup",
+            "@id": "bts:parent_group",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ParentGroup",
+            "rdfs:label": "parent_group",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
@@ -5956,13 +5956,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:MetaGroup",
+            "@id": "bts:meta_group",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "MetaGroup",
+            "rdfs:label": "meta_group",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Tags"
+                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
