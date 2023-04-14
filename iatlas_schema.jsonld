@@ -908,9 +908,7 @@
             ],
             "sms:displayName": "hgnc",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:entrez",
@@ -2183,9 +2181,7 @@
             ],
             "sms:displayName": "qtl_type",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:ecaviar_pp",
@@ -2210,9 +2206,7 @@
             ],
             "sms:displayName": "ecaviar_pp",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:plot_type",
@@ -2237,9 +2231,7 @@
             ],
             "sms:displayName": "plot_type",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:splice_loc",
@@ -2256,9 +2248,7 @@
             },
             "sms:displayName": "splice_loc",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:tissue",
@@ -2275,9 +2265,7 @@
             },
             "sms:displayName": "tissue",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:copy_number_results",
@@ -2333,9 +2321,7 @@
             ],
             "sms:displayName": "direction",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:mean_normal",
@@ -2353,7 +2339,8 @@
             "sms:displayName": "mean_normal",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -2372,7 +2359,8 @@
             "sms:displayName": "mean_cnv",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -2432,9 +2420,7 @@
             ],
             "sms:displayName": "dataset_type",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:datasets_to_tags",
@@ -2605,7 +2591,8 @@
             "sms:displayName": "maf",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -2745,8 +2732,8 @@
             "sms:displayName": "order",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int",
-                "inRange 0 None error"
+                "int error",
+                "IsNA"
             ]
         },
         {
@@ -2781,9 +2768,7 @@
             ],
             "sms:displayName": "unit",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:class",
@@ -2800,9 +2785,7 @@
             },
             "sms:displayName": "class",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:method_tag",
@@ -2819,9 +2802,7 @@
             },
             "sms:displayName": "method_tag",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:features_to_samples",
@@ -2880,9 +2861,7 @@
             },
             "sms:displayName": "feature_to_sample_value",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "num"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:genes",
@@ -2974,9 +2953,7 @@
             },
             "sms:displayName": "gene_function",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:immune_checkpoint",
@@ -2993,9 +2970,7 @@
             },
             "sms:displayName": "immune_checkpoint",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:gene_pathway",
@@ -3012,9 +2987,7 @@
             },
             "sms:displayName": "gene_pathway",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:super_category",
@@ -3031,9 +3004,7 @@
             },
             "sms:displayName": "super_category",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:therapy_type",
@@ -3050,9 +3021,7 @@
             },
             "sms:displayName": "therapy_type",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:io_landscape_name",
@@ -3069,9 +3038,7 @@
             },
             "sms:displayName": "io_landscape_name",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:friendly_name",
@@ -3088,9 +3055,7 @@
             },
             "sms:displayName": "friendly_name",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:gene_sets",
@@ -3220,8 +3185,8 @@
             "sms:displayName": "rna_seq_expression",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 None error"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -3293,9 +3258,7 @@
             },
             "sms:displayName": "cluster",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:mutations",
@@ -3354,9 +3317,7 @@
             },
             "sms:displayName": "mutation_code",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:mutation_type",
@@ -3378,9 +3339,7 @@
             ],
             "sms:displayName": "mutation_type",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:nodes",
@@ -3447,7 +3406,8 @@
             "sms:displayName": "x",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -3466,7 +3426,8 @@
             "sms:displayName": "y",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -3492,9 +3453,7 @@
             ],
             "sms:displayName": "network",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:node_gene_id",
@@ -3635,8 +3594,8 @@
             "sms:displayName": "age_at_diagnosis",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int",
-                "inRange 0 200 error"
+                "int error",
+                "IsNA"
             ]
         },
         {
@@ -3662,9 +3621,7 @@
             ],
             "sms:displayName": "ethnicity",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:gender",
@@ -3689,9 +3646,7 @@
             ],
             "sms:displayName": "gender",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:height",
@@ -3709,8 +3664,8 @@
             "sms:displayName": "height",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 400 error"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -3745,9 +3700,7 @@
             ],
             "sms:displayName": "race",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:weight",
@@ -3765,8 +3718,8 @@
             "sms:displayName": "weight",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 600 error"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -3848,7 +3801,7 @@
             "sms:displayName": "pubmed_id",
             "sms:required": "sms:true",
             "sms:validationRules": [
-                "num"
+                "float"
             ]
         },
         {
@@ -3866,9 +3819,7 @@
             },
             "sms:displayName": "journal",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:first_author_last_name",
@@ -3885,9 +3836,7 @@
             },
             "sms:displayName": "first_author_last_name",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:publications_to_genes_to_gene_sets",
@@ -4057,9 +4006,7 @@
             },
             "sms:displayName": "pathway",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:q1",
@@ -4077,7 +4024,8 @@
             "sms:displayName": "q1",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4096,7 +4044,8 @@
             "sms:displayName": "q2",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4115,7 +4064,8 @@
             "sms:displayName": "q3",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4219,9 +4169,7 @@
             ],
             "sms:displayName": "mutation_status",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:samples_to_tags",
@@ -4356,9 +4304,7 @@
             },
             "sms:displayName": "rsid",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:chr",
@@ -4375,9 +4321,7 @@
             },
             "sms:displayName": "chr",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:bp",
@@ -4395,7 +4339,8 @@
             "sms:displayName": "bp",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int"
+                "int error",
+                "IsNA"
             ]
         },
         {
@@ -4464,9 +4409,7 @@
             ],
             "sms:displayName": "tag_type",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:tags_to_tags",
@@ -4622,9 +4565,7 @@
             },
             "sms:displayName": "id",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:name",
@@ -4677,9 +4618,7 @@
             },
             "sms:displayName": "name",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:display",
@@ -4708,9 +4647,7 @@
             },
             "sms:displayName": "display",
             "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:description",
@@ -4733,9 +4670,7 @@
             },
             "sms:displayName": "description",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:color",
@@ -4752,9 +4687,7 @@
             },
             "sms:displayName": "color",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:link",
@@ -4774,9 +4707,7 @@
             },
             "sms:displayName": "link",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "url"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:year",
@@ -4794,7 +4725,8 @@
             "sms:displayName": "year",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int"
+                "int error",
+                "IsNA"
             ]
         },
         {
@@ -4815,9 +4747,7 @@
             },
             "sms:displayName": "label",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:score",
@@ -4838,7 +4768,8 @@
             "sms:displayName": "score",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4866,8 +4797,8 @@
             "sms:displayName": "p_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 1"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4886,7 +4817,8 @@
             "sms:displayName": "fold_change",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4905,7 +4837,8 @@
             "sms:displayName": "log10_p_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4924,7 +4857,8 @@
             "sms:displayName": "log10_fold_change",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4943,8 +4877,8 @@
             "sms:displayName": "n_wildtype",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 None"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4963,8 +4897,8 @@
             "sms:displayName": "n_mutant",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 None"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -4983,8 +4917,8 @@
             "sms:displayName": "n_total",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 None"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5003,7 +4937,8 @@
             "sms:displayName": "t_stat",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5022,8 +4957,8 @@
             "sms:displayName": "fdr",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 1"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5042,8 +4977,8 @@
             "sms:displayName": "variance",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 None"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5062,8 +4997,8 @@
             "sms:displayName": "se",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num",
-                "inRange 0 None"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5082,7 +5017,8 @@
             "sms:displayName": "mean",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5101,7 +5037,8 @@
             "sms:displayName": "min",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
@@ -5120,7 +5057,8 @@
             "sms:displayName": "max",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "float error",
+                "IsNA"
             ]
         },
         {
