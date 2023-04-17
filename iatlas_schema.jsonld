@@ -4401,7 +4401,10 @@
                     "@id": "bts:name"
                 },
                 {
-                    "@id": "bts:display"
+                    "@id": "bts:short_display"
+                },
+                {
+                    "@id": "bts:long_display"
                 },
                 {
                     "@id": "bts:description"
@@ -4416,6 +4419,40 @@
                     "@id": "bts:id"
                 }
             ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:short_display",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "short_display",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:tags"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "short_display",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:long_display",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "long_display",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:tags"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "long_display",
+            "sms:required": "sms:true",
             "sms:validationRules": []
         },
         {
@@ -4675,9 +4712,6 @@
                 },
                 {
                     "@id": "bts:slides"
-                },
-                {
-                    "@id": "bts:tags"
                 }
             ],
             "schema:isPartOf": {
