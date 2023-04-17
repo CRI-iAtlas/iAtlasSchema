@@ -17,7 +17,7 @@ datasets,,"Component, name, display, dataset_type, id","name, display, dataset_t
 dataset_type,,,,TRUE,,,,,"analysis, other"
 datasets_to_tags,"datasets, tags","Component, dataset_id, tag_id, id","dataset_id, tag_id, id",,,,,,
 driver_results,"mutations, features, tags, datasets","Component, mutation_id, dataset_id, tag_id, feature_id, p_value, fold_change, log10_p_value, log10_fold_change, id","mutation_id, dataset_id, tag_id, feature_id, p_value, fold_change, log10_p_value, log10_fold_change, id",,,,,,
-germline_gwas_result,"features, datasets, snps","Component, feature_id, dataset_id, snp_id, maf, p_value, id","feature_id, dataset_id, snp_id, maf, p_value, id",,,,,,
+germline_gwas_results,"features, datasets, snps","Component, feature_id, dataset_id, snp_id, maf, p_value, id","feature_id, dataset_id, snp_id, maf, p_value, id",,,,,,
 maf,,,,,num error::IsNA,,,,
 edges,,"Component, node_1_id, node_2_id, name, label, score, id","node_1_id, node_2_id, name, label, score, id",,,,,,
 node_1_id,,,,,matchAtLeastOne nodes.id set error,,,,

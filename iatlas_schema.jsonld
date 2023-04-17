@@ -2537,10 +2537,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:germline_gwas_result",
+            "@id": "bts:germline_gwas_results",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "germline_gwas_result",
+            "rdfs:label": "germline_gwas_results",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2549,7 +2549,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "germline_gwas_result",
+            "sms:displayName": "germline_gwas_results",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -2594,7 +2594,7 @@
             "rdfs:label": "maf",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:germline_gwas_result"
+                    "@id": "bts:germline_gwas_results"
                 }
             ],
             "schema:isPartOf": {
@@ -4526,7 +4526,7 @@
                     "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:germline_gwas_result"
+                    "@id": "bts:germline_gwas_results"
                 },
                 {
                     "@id": "bts:edges"
@@ -4820,7 +4820,7 @@
                     "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:germline_gwas_result"
+                    "@id": "bts:germline_gwas_results"
                 },
                 {
                     "@id": "bts:heritability_results"
@@ -5112,7 +5112,7 @@
                     "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:germline_gwas_result"
+                    "@id": "bts:germline_gwas_results"
                 },
                 {
                     "@id": "bts:features_to_samples"
@@ -5336,7 +5336,7 @@
                     "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:germline_gwas_result"
+                    "@id": "bts:germline_gwas_results"
                 },
                 {
                     "@id": "bts:heritability_results"
@@ -5386,7 +5386,7 @@
                     "@id": "bts:colocalizations"
                 },
                 {
-                    "@id": "bts:germline_gwas_result"
+                    "@id": "bts:germline_gwas_results"
                 }
             ],
             "schema:isPartOf": {
