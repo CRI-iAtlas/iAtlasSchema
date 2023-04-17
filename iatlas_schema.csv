@@ -26,7 +26,7 @@ features,,"Component, name, display, order, unit, class, method_tag, id","name, 
 order,,,,,int error::IsNA,The order used to display the feature in plots,,,
 unit,,,,,,The unit of measurement,,,"Fraction, Count, Score, Per Megabase, Year, Not Applicable"
 class,,,,TRUE,,,,,
-method_tag,,,,TRUE,,,,,
+method_tag,,,,,,,,,
 features_to_samples,"features, samples","Component, feature_id, sample_id, feature_to_sample_value, id","feature_id, sample_id, feature_to_sample_value, id",,,feature to sample relationship,,,
 feature_to_sample_value,,,,,,The value of the feature for the sample,,,
 genes,,"Component, entrez, hgnc, gene_family, gene_function, immune_checkpoint, gene_pathway, super_category, therapy_type, description, io_landscape_name, friendly_name, id","entrez, hgnc, gene_family, gene_function, immune_checkpoint, gene_pathway, super_category, therapy_type, description, io_landscape_name, friendly_name, id",,,A gene,,,

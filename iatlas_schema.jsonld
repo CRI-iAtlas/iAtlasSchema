@@ -2816,7 +2816,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "method_tag",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
