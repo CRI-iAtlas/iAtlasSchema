@@ -49,10 +49,10 @@ cluster,,,,,,,,,
 mutations,genes,"Component, name, gene_id, mutation_type, mutation_code, id","gene_id, name, mutation_type, mutation_code, id",,,A gene mutation,,,
 mutation_code,,,,TRUE,,,,,
 mutation_type,,,,TRUE,,,,,driver mutation
-nodes,,"Component, name, label, score, x, y, gene_id, feature_id, dataset_id, id","name, label, score, x, y, gene_id, feature_id, dataset_id, id",,,,,,
+nodes,"genes, features, datasets","Component, name, label, score, x, y, node_gene_id, node_feature_id, dataset_id, id","name, label, score, x, y, node_gene_id, node_feature_id, dataset_id, id",,,,,,
 x,,,,,num error::IsNA,,,,
 y,,,,,num error::IsNA,,,,
-network,,,,,,,,,"Extracellular Network, Cellimage Network, Not Applicable"
+network,,,,TRUE,,,,,"Extracellular Network, Cellimage Network"
 node_gene_id,,,,,matchAtLeastOne genes.id set error,,,,
 node_feature_id,,,,,matchAtLeastOne features.id set error,,,,
 nodes_to_tags,"nodes, tags","Component, node_id, tag_id, id","node_id, tag_id, id",,,,,,

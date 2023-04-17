@@ -3363,7 +3363,7 @@
             "rdfs:label": "nodes",
             "rdfs:subClassOf": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:Thing"
                 }
             ],
             "schema:isPartOf": {
@@ -3371,6 +3371,17 @@
             },
             "sms:displayName": "nodes",
             "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:genes"
+                },
+                {
+                    "@id": "bts:features"
+                },
+                {
+                    "@id": "bts:datasets"
+                }
+            ],
             "sms:requiresDependency": [
                 {
                     "@id": "bts:Component"
@@ -3391,10 +3402,10 @@
                     "@id": "bts:y"
                 },
                 {
-                    "@id": "bts:gene_id"
+                    "@id": "bts:node_gene_id"
                 },
                 {
-                    "@id": "bts:feature_id"
+                    "@id": "bts:node_feature_id"
                 },
                 {
                     "@id": "bts:dataset_id"
@@ -3464,23 +3475,20 @@
                 },
                 {
                     "@id": "bts:Cellimage Network"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "network",
-            "sms:required": "sms:false",
+            "sms:required": "sms:true",
             "sms:validationRules": []
         },
         {
             "@id": "bts:node_gene_id",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "node_gene_id",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -3494,12 +3502,12 @@
         },
         {
             "@id": "bts:node_feature_id",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "node_feature_id",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -5113,9 +5121,6 @@
                     "@id": "bts:heritibility_results"
                 },
                 {
-                    "@id": "bts:nodes"
-                },
-                {
                     "@id": "bts:rare_variant_association_pathways"
                 }
             ],
@@ -5148,9 +5153,6 @@
                 },
                 {
                     "@id": "bts:mutations"
-                },
-                {
-                    "@id": "bts:nodes"
                 },
                 {
                     "@id": "bts:publications_to_genes_to_gene_sets"
