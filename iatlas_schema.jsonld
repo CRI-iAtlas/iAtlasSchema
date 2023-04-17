@@ -2177,6 +2177,9 @@
                 },
                 {
                     "@id": "bts:eQTL"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "qtl_type",
@@ -2202,6 +2205,9 @@
                 },
                 {
                     "@id": "bts:C2"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "ecaviar_pp",
@@ -2227,6 +2233,9 @@
                 },
                 {
                     "@id": "bts:Expanded Region"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "plot_type",
@@ -2317,6 +2326,9 @@
                 },
                 {
                     "@id": "bts:Del"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "direction",
@@ -2764,6 +2776,9 @@
                 },
                 {
                     "@id": "bts:Year"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "unit",
@@ -3449,6 +3464,9 @@
                 },
                 {
                     "@id": "bts:Cellimage Network"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "network",
@@ -3617,6 +3635,9 @@
                 },
                 {
                     "@id": "bts:hispanic or latino"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "ethnicity",
@@ -3642,6 +3663,9 @@
                 },
                 {
                     "@id": "bts:male"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "gender",
@@ -3696,6 +3720,9 @@
                 },
                 {
                     "@id": "bts:american indian or alaska native"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "race",
@@ -4405,6 +4432,9 @@
                 },
                 {
                     "@id": "bts:meta_group"
+                },
+                {
+                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "tag_type",
@@ -5397,6 +5427,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "eQTL",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Not Applicable",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Not Applicable",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:colocalizations"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Not Applicable",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },

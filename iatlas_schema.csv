@@ -4,13 +4,13 @@ cohorts,"datasets, tags","Component, dataset_id, cohort_tag_id, id","name, datas
 cohort_tag_id,,,,,matchAtLeastOne tags.id set error,,,,
 colocalizations,"genes, features, snps, datasets","Component, gene_id, dataset_id, gene_id, snp_id, feature_id, coloc_dataset_id, qtl_type, ecaviar_pp, plot_type, splice_loc, tissue, link, id","gene_id, dataset_id, gene_id, snp_id, feature_id, coloc_dataset_id, qtl_type, ecaviar_pp, plot_type, splice_loc, tissue, link, id",,,,,,
 coloc_dataset_id,,,,,matchAtLeastOne datasets.id set error,,,,
-qtl_type,,,,,,,,,"sQTL, eQTL"
-ecaviar_pp,,,,,,,,,"C1, C2"
-plot_type,,,,,,,,,"3 Level Plot, Expanded Region"
+qtl_type,,,,,,,,,"sQTL, eQTL, Not Applicable"
+ecaviar_pp,,,,,,,,,"C1, C2, Not Applicable"
+plot_type,,,,,,,,,"3 Level Plot, Expanded Region, Not Applicable"
 splice_loc,,,,,,,,,
 tissue,,,,,,,,,
 copy_number_results,"genes, features, tags, datasets",,,,,,,,
-direction,,,,,,,,,"Amp, Del"
+direction,,,,,,,,,"Amp, Del, Not Applicable"
 mean_normal,,,,,float error::IsNA,,,,
 mean_cnv,,,,,float error::IsNA,,,,
 datasets,,"Component, name, display, dataset_type, id","name, display, dataset_type, id",,,,,,
@@ -24,7 +24,7 @@ node_1_id,,,,,matchAtLeastOne nodes.id set error,,,,
 node_2_id,,,,,matchAtLeastOne nodes.id set error,,,,
 features,,"Component, name, display, order, unit, class, method_tag, id","name, display, order, unit, class, method_tag, id",,,A result of an assay with a numeric result,,,
 order,,,,,int error::IsNA,The order used to display the feature in plots,,,
-unit,,,,,,The unit of measurement,,,"Fraction, Count, Score, Per Megabase, Year"
+unit,,,,,,The unit of measurement,,,"Fraction, Count, Score, Per Megabase, Year, Not Applicable"
 class,,,,TRUE,,,,,
 method_tag,,,,TRUE,,,,,
 features_to_samples,"features, samples","Component, feature_id, sample_id, feature_to_sample_value, id","feature_id, sample_id, feature_to_sample_value, id",,,feature to sample relationship,,,
@@ -52,16 +52,16 @@ mutation_type,,,,TRUE,,,,,driver mutation
 nodes,,"Component, name, label, score, x, y, gene_id, feature_id, dataset_id, id","name, label, score, x, y, gene_id, feature_id, dataset_id, id",,,,,,
 x,,,,,float error::IsNA,,,,
 y,,,,,float error::IsNA,,,,
-network,,,,,,,,,"Extracellular Network, Cellimage Network"
+network,,,,,,,,,"Extracellular Network, Cellimage Network, Not Applicable"
 node_gene_id,,,,,matchAtLeastOne genes.id set error,,,,
 node_feature_id,,,,,matchAtLeastOne features.id set error,,,,
 nodes_to_tags,"nodes, tags","Component, node_id, tag_id, id","node_id, tag_id, id",,,,,,
 patients,,"Component, name, age_at_diagnosis, ethnicity, gender, height, race, weight, id","name, age_at_diagnosis, ethnicity, gender, height, id, race, weight",,,A patient,,,
 age_at_diagnosis,,,,,int error::IsNA,The age of the patient at diagnosis,,,
-ethnicity,,,,,,The ethnicity of the patient,,,"not hispanic or latino, hispanic or latino"
-gender,,,,,,The gender of the patient,,,"female, male"
+ethnicity,,,,,,The ethnicity of the patient,,,"not hispanic or latino, hispanic or latino, Not Applicable"
+gender,,,,,,The gender of the patient,,,"female, male, Not Applicable"
 height,,,,,float error::IsNA,The height of the patient,,,
-race,,,,,,The race of the patient,,,"white, black or african american, asian, native hawaiian or other pacific islander, american indian or alaska native"
+race,,,,,,The race of the patient,,,"white, black or african american, asian, native hawaiian or other pacific islander, american indian or alaska native, Not Applicable"
 weight,,,,,float error::IsNA,The weight of the patient,,,
 publications,,"Component, name, pubmed_id, do_id, journal, first_author_last_name, year, link, id","name, pubmed_id, do_id, journal, first_author_last_name, year, link, id",,,A publication,,,
 do_id,,,,,,,,,
@@ -85,7 +85,7 @@ rsid,,,,,,,,,
 chr,,,,,,,,,
 bp,,,,,int error::IsNA,,,,
 tags,,"Component, name, display, description, color, tag_type, id","name, display, description, color, tag_type, id",,,A way to tag other components,,,
-tag_type,,,,,,,,,"group, parent_group, meta_group"
+tag_type,,,,,,,,,"group, parent_group, meta_group, Not Applicable"
 tags_to_tags,tags,"Component, tag_id, parent_tag_id, id","tag_id, parent_tag_id, id",,,,,,
 parent_tag_id,,,,TRUE,matchAtLeastOne tags.id set error,,,,
 id,,,,TRUE,,,,,
