@@ -3205,10 +3205,10 @@
             ]
         },
         {
-            "@id": "bts:heritibility_results",
+            "@id": "bts:heritability_results",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "heritibility_results",
+            "rdfs:label": "heritability_results",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -3217,7 +3217,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "heritibility_results",
+            "sms:displayName": "heritability_results",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -3265,7 +3265,7 @@
             "rdfs:label": "cluster",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 }
             ],
             "schema:isPartOf": {
@@ -4550,7 +4550,7 @@
                     "@id": "bts:genes_to_samples"
                 },
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 },
                 {
                     "@id": "bts:mutations"
@@ -4823,7 +4823,7 @@
                     "@id": "bts:germline_gwas_result"
                 },
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 },
                 {
                     "@id": "bts:rare_variant_association_pathways"
@@ -4986,7 +4986,7 @@
             "rdfs:label": "fdr",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5006,7 +5006,7 @@
             "rdfs:label": "variance",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5026,7 +5026,7 @@
             "rdfs:label": "se",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5118,7 +5118,7 @@
                     "@id": "bts:features_to_samples"
                 },
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 },
                 {
                     "@id": "bts:rare_variant_association_pathways"
@@ -5339,7 +5339,7 @@
                     "@id": "bts:germline_gwas_result"
                 },
                 {
-                    "@id": "bts:heritibility_results"
+                    "@id": "bts:heritability_results"
                 },
                 {
                     "@id": "bts:nodes"
