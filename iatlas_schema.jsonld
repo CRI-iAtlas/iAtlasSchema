@@ -2351,7 +2351,7 @@
             "sms:displayName": "mean_normal",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -2371,7 +2371,7 @@
             "sms:displayName": "mean_cnv",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -2603,7 +2603,7 @@
             "sms:displayName": "maf",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -3200,7 +3200,7 @@
             "sms:displayName": "rna_seq_expression",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -3421,7 +3421,7 @@
             "sms:displayName": "x",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -3441,7 +3441,7 @@
             "sms:displayName": "y",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -3688,7 +3688,7 @@
             "sms:displayName": "height",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -3745,7 +3745,7 @@
             "sms:displayName": "weight",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -3828,7 +3828,7 @@
             "sms:displayName": "pubmed_id",
             "sms:required": "sms:true",
             "sms:validationRules": [
-                "float"
+                "num"
             ]
         },
         {
@@ -4051,7 +4051,7 @@
             "sms:displayName": "q1",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4071,7 +4071,7 @@
             "sms:displayName": "q2",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4091,7 +4091,7 @@
             "sms:displayName": "q3",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4798,7 +4798,7 @@
             "sms:displayName": "score",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4827,7 +4827,7 @@
             "sms:displayName": "p_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4847,7 +4847,7 @@
             "sms:displayName": "fold_change",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4867,7 +4867,7 @@
             "sms:displayName": "log10_p_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4887,7 +4887,7 @@
             "sms:displayName": "log10_fold_change",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4907,7 +4907,7 @@
             "sms:displayName": "n_wildtype",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4927,7 +4927,7 @@
             "sms:displayName": "n_mutant",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4947,7 +4947,7 @@
             "sms:displayName": "n_total",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4967,7 +4967,7 @@
             "sms:displayName": "t_stat",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -4987,7 +4987,7 @@
             "sms:displayName": "fdr",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -5007,7 +5007,7 @@
             "sms:displayName": "variance",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -5027,7 +5027,7 @@
             "sms:displayName": "se",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -5047,7 +5047,7 @@
             "sms:displayName": "mean",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -5067,7 +5067,7 @@
             "sms:displayName": "min",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
@@ -5087,7 +5087,7 @@
             "sms:displayName": "max",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "float error",
+                "num error",
                 "IsNA"
             ]
         },
