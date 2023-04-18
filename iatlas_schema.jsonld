@@ -2177,9 +2177,6 @@
                 },
                 {
                     "@id": "bts:eQTL"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "qtl_type",
@@ -2205,9 +2202,6 @@
                 },
                 {
                     "@id": "bts:C2"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "ecaviar_pp",
@@ -2233,9 +2227,6 @@
                 },
                 {
                     "@id": "bts:Expanded Region"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "plot_type",
@@ -2355,9 +2346,6 @@
                 },
                 {
                     "@id": "bts:Del"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "direction",
@@ -2380,8 +2368,7 @@
             "sms:displayName": "mean_normal",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -2400,8 +2387,7 @@
             "sms:displayName": "mean_cnv",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -2632,8 +2618,7 @@
             "sms:displayName": "maf",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -2773,8 +2758,7 @@
             "sms:displayName": "order",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int error",
-                "IsNA"
+                "int warning"
             ]
         },
         {
@@ -2805,9 +2789,6 @@
                 },
                 {
                     "@id": "bts:Year"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "unit",
@@ -3229,8 +3210,7 @@
             "sms:displayName": "rna_seq_expression",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -3461,8 +3441,7 @@
             "sms:displayName": "x",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -3481,8 +3460,7 @@
             "sms:displayName": "y",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -3649,8 +3627,7 @@
             "sms:displayName": "age_at_diagnosis",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int error",
-                "IsNA"
+                "int warning"
             ]
         },
         {
@@ -3672,9 +3649,6 @@
                 },
                 {
                     "@id": "bts:hispanic or latino"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "ethnicity",
@@ -3700,9 +3674,6 @@
                 },
                 {
                     "@id": "bts:male"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "gender",
@@ -3725,8 +3696,7 @@
             "sms:displayName": "height",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -3757,9 +3727,6 @@
                 },
                 {
                     "@id": "bts:american indian or alaska native"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "race",
@@ -3782,8 +3749,7 @@
             "sms:displayName": "weight",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -3882,8 +3848,7 @@
             "sms:displayName": "pubmed_id",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int error",
-                "IsNA"
+                "int warning"
             ]
         },
         {
@@ -4106,8 +4071,7 @@
             "sms:displayName": "q1",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4126,8 +4090,7 @@
             "sms:displayName": "q2",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4146,8 +4109,7 @@
             "sms:displayName": "q3",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4421,8 +4383,7 @@
             "sms:displayName": "bp",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int error",
-                "IsNA"
+                "int warning"
             ]
         },
         {
@@ -4524,9 +4485,6 @@
                 },
                 {
                     "@id": "bts:meta_group"
-                },
-                {
-                    "@id": "bts:Not Applicable"
                 }
             ],
             "sms:displayName": "tag_type",
@@ -4844,8 +4802,7 @@
             "sms:displayName": "year",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "int error",
-                "IsNA"
+                "int warning"
             ]
         },
         {
@@ -4887,8 +4844,7 @@
             "sms:displayName": "score",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4916,8 +4872,7 @@
             "sms:displayName": "p_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4936,8 +4891,7 @@
             "sms:displayName": "fold_change",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4956,8 +4910,7 @@
             "sms:displayName": "log10_p_value",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4976,8 +4929,7 @@
             "sms:displayName": "log10_fold_change",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -4996,8 +4948,7 @@
             "sms:displayName": "n_wildtype",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5016,8 +4967,7 @@
             "sms:displayName": "n_mutant",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5036,8 +4986,7 @@
             "sms:displayName": "n_total",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5056,8 +5005,7 @@
             "sms:displayName": "t_stat",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5076,8 +5024,7 @@
             "sms:displayName": "fdr",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5096,8 +5043,7 @@
             "sms:displayName": "variance",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5116,8 +5062,7 @@
             "sms:displayName": "se",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5136,8 +5081,7 @@
             "sms:displayName": "mean",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5156,8 +5100,7 @@
             "sms:displayName": "min",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5176,8 +5119,7 @@
             "sms:displayName": "max",
             "sms:required": "sms:false",
             "sms:validationRules": [
-                "num error",
-                "IsNA"
+                "num warning"
             ]
         },
         {
@@ -5522,23 +5464,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "eQTL",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Not Applicable",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Not Applicable",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:colocalizations"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Not Applicable",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
