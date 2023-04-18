@@ -2305,16 +2305,45 @@
                     "@id": "bts:datasets"
                 }
             ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:gene_id"
+                },
+                {
+                    "@id": "bts:feature_id"
+                },
+                {
+                    "@id": "bts:tag_id"
+                },
+                {
+                    "@id": "bts:dataset_id"
+                },
+                {
+                    "@id": "bts:direction"
+                },
+                {
+                    "@id": "bts:mean_normal"
+                },
+                {
+                    "@id": "bts:mean_cnv"
+                },
+                {
+                    "@id": "bts:id"
+                }
+            ],
             "sms:validationRules": []
         },
         {
             "@id": "bts:direction",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "direction",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:copy_number_results"
                 }
             ],
             "schema:isPartOf": {
@@ -2337,12 +2366,12 @@
         },
         {
             "@id": "bts:mean_normal",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "mean_normal",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:copy_number_results"
                 }
             ],
             "schema:isPartOf": {
@@ -2357,12 +2386,12 @@
         },
         {
             "@id": "bts:mean_cnv",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "mean_cnv",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:copy_number_results"
                 }
             ],
             "schema:isPartOf": {
@@ -3777,7 +3806,7 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:name"
+                    "@id": "bts:publication_title"
                 },
                 {
                     "@id": "bts:pubmed_id"
@@ -3801,6 +3830,23 @@
                     "@id": "bts:id"
                 }
             ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:publication_title",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "publication_title",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:publications"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "publication_title",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3834,9 +3880,10 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "pubmed_id",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": [
-                "num"
+                "int error",
+                "IsNA"
             ]
         },
         {
@@ -3853,7 +3900,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "journal",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3870,7 +3917,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "first_author_last_name",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -4554,6 +4601,9 @@
                     "@id": "bts:colocalizations"
                 },
                 {
+                    "@id": "bts:copy_number_results"
+                },
+                {
                     "@id": "bts:datasets"
                 },
                 {
@@ -4671,9 +4721,6 @@
                 },
                 {
                     "@id": "bts:patients"
-                },
-                {
-                    "@id": "bts:publications"
                 },
                 {
                     "@id": "bts:samples"
@@ -5143,6 +5190,9 @@
                     "@id": "bts:colocalizations"
                 },
                 {
+                    "@id": "bts:copy_number_results"
+                },
+                {
                     "@id": "bts:driver_results"
                 },
                 {
@@ -5178,6 +5228,9 @@
                 },
                 {
                     "@id": "bts:colocalizations"
+                },
+                {
+                    "@id": "bts:copy_number_results"
                 },
                 {
                     "@id": "bts:genes_to_gene_sets"
@@ -5324,6 +5377,9 @@
             "rdfs:label": "tag_id",
             "schema:domainIncludes": [
                 {
+                    "@id": "bts:copy_number_results"
+                },
+                {
                     "@id": "bts:datasets_to_tags"
                 },
                 {
@@ -5362,6 +5418,9 @@
                 },
                 {
                     "@id": "bts:colocalizations"
+                },
+                {
+                    "@id": "bts:copy_number_results"
                 },
                 {
                     "@id": "bts:datasets_to_tags"
@@ -5558,7 +5617,7 @@
             "rdfs:label": "Amp",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:direction"
+                    "@id": "bts:copy_number_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5575,7 +5634,7 @@
             "rdfs:label": "Del",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:direction"
+                    "@id": "bts:copy_number_results"
                 }
             ],
             "schema:isPartOf": {

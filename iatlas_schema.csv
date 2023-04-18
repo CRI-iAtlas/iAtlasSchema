@@ -9,7 +9,7 @@ ecaviar_pp,,,,,,,,,"C1, C2, Not Applicable"
 plot_type,,,,,,,,,"3 Level Plot, Expanded Region, Not Applicable"
 splice_loc,,,,,,,,,
 tissue,,,,,,,,,
-copy_number_results,"genes, features, tags, datasets",,,,,,,,
+copy_number_results,"genes, features, tags, datasets","Component, gene_id, feature_id, tag_id, dataset_id, direction, mean_normal, mean_cnv, id","gene_id, feature_id, tag_id, dataset_id, direction, mean_normal, mean_cnv, id",,,,,,
 direction,,,,,,,,,"Amp, Del, Not Applicable"
 mean_normal,,,,,num error::IsNA,,,,
 mean_cnv,,,,,num error::IsNA,,,,
@@ -63,11 +63,12 @@ gender,,,,,,The gender of the patient,,,"female, male, Not Applicable"
 height,,,,,num error::IsNA,The height of the patient,,,
 race,,,,,,The race of the patient,,,"white, black or african american, asian, native hawaiian or other pacific islander, american indian or alaska native, Not Applicable"
 weight,,,,,num error::IsNA,The weight of the patient,,,
-publications,,"Component, name, pubmed_id, do_id, journal, first_author_last_name, year, link, id","name, pubmed_id, do_id, journal, first_author_last_name, year, link, id",,,A publication,,,
+publications,,"Component, publication_title, pubmed_id, do_id, journal, first_author_last_name, year, link, id","publication_title, pubmed_id, do_id, journal, first_author_last_name, year, link, id",,,A publication,,,
+publication_title,,,,,,,,,
 do_id,,,,,,,,,
-pubmed_id,,,,TRUE,num,The pubmed id,,,
-journal,,,,TRUE,,The Jorunal name,,,
-first_author_last_name,,,,TRUE,,The first authors last name,,,
+pubmed_id,,,,,int error::IsNA,The pubmed id,,,
+journal,,,,,,The Jorunal name,,,
+first_author_last_name,,,,,,The first authors last name,,,
 publications_to_genes_to_gene_sets,"genes, gene_sets, publications","Component, gene_id, gene_set_id, publication_id, id","gene_id, gene_set_id, publication_id, id",,,,,,
 publications_to_tags,"publications, tags","Component, publication_id, tag_id, id","publication_id, tag_id, id",,,,,,
 rare_variant_association_pathways,"features, datasets","Component, feature_id, dataset_id, p_value, min, max, mean, n_mutant, n_total, pathway, q1, q2, q3, id","feature_id, dataset_id, p_value, min, max, mean, n_mutant, n_total, pathway, q1, q2, q3, id",,,,,,
