@@ -2500,6 +2500,15 @@
                     "@id": "bts:mean_cnv"
                 },
                 {
+                    "@id": "bts:t_stat"
+                },
+                {
+                    "@id": "bts:p_value"
+                },
+                {
+                    "@id": "bts:log10_p_value"
+                },
+                {
                     "@id": "bts:id"
                 }
             ],
@@ -2948,7 +2957,7 @@
                     "@id": "bts:unit"
                 },
                 {
-                    "@id": "bts:class"
+                    "@id": "bts:feature_class"
                 },
                 {
                     "@id": "bts:method_tag"
@@ -3013,10 +3022,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:class",
+            "@id": "bts:feature_class",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "class",
+            "rdfs:label": "feature_class",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:features"
@@ -3025,7 +3034,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "class",
+            "sms:displayName": "feature_class",
             "sms:required": "sms:true",
             "sms:validationRules": []
         },
@@ -3439,6 +3448,9 @@
                     "@id": "bts:rna_seq_expression"
                 },
                 {
+                    "@id": "bts:nanostring_expression"
+                },
+                {
                     "@id": "bts:gene_id"
                 },
                 {
@@ -3464,6 +3476,25 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "rna_seq_expression",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "num warning"
+            ]
+        },
+        {
+            "@id": "bts:nanostring_expression",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "nanostring_expression",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:genes_to_samples"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "nanostring_expression",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num warning"
@@ -5128,6 +5159,9 @@
             "rdfs:label": "p_value",
             "schema:domainIncludes": [
                 {
+                    "@id": "bts:copy_number_results"
+                },
+                {
                     "@id": "bts:driver_results"
                 },
                 {
@@ -5174,6 +5208,9 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "log10_p_value",
             "schema:domainIncludes": [
+                {
+                    "@id": "bts:copy_number_results"
+                },
                 {
                     "@id": "bts:driver_results"
                 }
@@ -5265,12 +5302,12 @@
         },
         {
             "@id": "bts:t_stat",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "t_stat",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:copy_number_results"
                 }
             ],
             "schema:isPartOf": {
