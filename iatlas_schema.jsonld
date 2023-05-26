@@ -2981,25 +2981,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:order",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The order used to display the feature in plots",
-            "rdfs:label": "order",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:features"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "order",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "int warning"
-            ]
-        },
-        {
             "@id": "bts:unit",
             "@type": "rdf:Property",
             "rdfs:comment": "The unit of measurement",
@@ -4760,6 +4741,9 @@
                     "@id": "bts:tag_type"
                 },
                 {
+                    "@id": "bts:order"
+                },
+                {
                     "@id": "bts:id"
                 }
             ],
@@ -5079,6 +5063,28 @@
             "sms:displayName": "display",
             "sms:required": "sms:true",
             "sms:validationRules": []
+        },
+        {
+            "@id": "bts:order",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The order used to display the feature in plots",
+            "rdfs:label": "order",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:features"
+                },
+                {
+                    "@id": "bts:tags"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "order",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "int warning"
+            ]
         },
         {
             "@id": "bts:description",
