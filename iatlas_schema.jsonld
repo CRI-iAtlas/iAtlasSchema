@@ -2772,6 +2772,12 @@
                     "@id": "bts:log10_fold_change"
                 },
                 {
+                    "@id": "bts:n_wildtype"
+                },
+                {
+                    "@id": "bts:n_mutant"
+                },
+                {
                     "@id": "bts:id"
                 }
             ],
@@ -2963,6 +2969,12 @@
                     "@id": "bts:method_tag"
                 },
                 {
+                    "@id": "bts:germline_category"
+                },
+                {
+                    "@id": "bts:germline_module"
+                },
+                {
                     "@id": "bts:id"
                 }
             ],
@@ -3052,6 +3064,40 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "method_tag",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:germline_category",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "germline_category",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:features"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "germline_category",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:germline_module",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "germline_module",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:features"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "germline_module",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -3707,6 +3753,9 @@
                     "@id": "bts:dataset_id"
                 },
                 {
+                    "@id": "bts:network"
+                },
+                {
                     "@id": "bts:id"
                 }
             ],
@@ -3752,12 +3801,12 @@
         },
         {
             "@id": "bts:network",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "network",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -5245,12 +5294,12 @@
         },
         {
             "@id": "bts:n_wildtype",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "n_wildtype",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:driver_results"
                 }
             ],
             "schema:isPartOf": {
@@ -5268,6 +5317,9 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "n_mutant",
             "schema:domainIncludes": [
+                {
+                    "@id": "bts:driver_results"
+                },
                 {
                     "@id": "bts:rare_variant_association_pathways"
                 }
@@ -6075,7 +6127,7 @@
             "rdfs:label": "Extracellular Network",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:network"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -6092,7 +6144,7 @@
             "rdfs:label": "Cellimage Network",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:network"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
