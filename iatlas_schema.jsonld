@@ -2860,7 +2860,7 @@
             "rdfs:label": "edges",
             "rdfs:subClassOf": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:Thing"
                 }
             ],
             "schema:isPartOf": {
@@ -2868,6 +2868,11 @@
             },
             "sms:displayName": "edges",
             "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:nodes"
+                }
+            ],
             "sms:requiresDependency": [
                 {
                     "@id": "bts:Component"
@@ -4089,7 +4094,7 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:publication_title"
+                    "@id": "bts:name"
                 },
                 {
                     "@id": "bts:pubmed_id"
@@ -4113,23 +4118,6 @@
                     "@id": "bts:id"
                 }
             ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:publication_title",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "publication_title",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:publications"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "publication_title",
-            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -4240,45 +4228,6 @@
                 },
                 {
                     "@id": "bts:publication_id"
-                },
-                {
-                    "@id": "bts:id"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:publications_to_tags",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "publications_to_tags",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "publications_to_tags",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:publications"
-                },
-                {
-                    "@id": "bts:tags"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:publication_id"
-                },
-                {
-                    "@id": "bts:tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -4812,6 +4761,45 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:tags_to_publications",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "tags_to_publications",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "tags_to_publications",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:publications"
+                },
+                {
+                    "@id": "bts:tags"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:publication_id"
+                },
+                {
+                    "@id": "bts:tag_id"
+                },
+                {
+                    "@id": "bts:id"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:tags_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -4839,7 +4827,7 @@
                     "@id": "bts:tag_id"
                 },
                 {
-                    "@id": "bts:parent_tag_id"
+                    "@id": "bts:related_tag_id"
                 },
                 {
                     "@id": "bts:id"
@@ -4848,10 +4836,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:parent_tag_id",
+            "@id": "bts:related_tag_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "parent_tag_id",
+            "rdfs:label": "related_tag_id",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:tags_to_tags"
@@ -4860,7 +4848,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "parent_tag_id",
+            "sms:displayName": "related_tag_id",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "matchAtLeastOne tags.id set error"
@@ -4954,9 +4942,6 @@
                     "@id": "bts:publications_to_genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:publications_to_tags"
-                },
-                {
                     "@id": "bts:rare_variant_association_pathways"
                 },
                 {
@@ -4976,6 +4961,9 @@
                 },
                 {
                     "@id": "bts:tags"
+                },
+                {
+                    "@id": "bts:tags_to_publications"
                 },
                 {
                     "@id": "bts:tags_to_tags"
@@ -5017,6 +5005,9 @@
                 },
                 {
                     "@id": "bts:patients"
+                },
+                {
+                    "@id": "bts:publications"
                 },
                 {
                     "@id": "bts:samples"
@@ -5625,7 +5616,7 @@
                     "@id": "bts:publications_to_genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:publications_to_tags"
+                    "@id": "bts:tags_to_publications"
                 }
             ],
             "schema:isPartOf": {
@@ -5718,10 +5709,10 @@
                     "@id": "bts:nodes_to_tags"
                 },
                 {
-                    "@id": "bts:publications_to_tags"
+                    "@id": "bts:samples_to_tags"
                 },
                 {
-                    "@id": "bts:samples_to_tags"
+                    "@id": "bts:tags_to_publications"
                 },
                 {
                     "@id": "bts:tags_to_tags"
