@@ -4236,10 +4236,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:rare_variant_association_pathways",
+            "@id": "bts:rare_variant_pathway_associations",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "rare_variant_association_pathways",
+            "rdfs:label": "rare_variant_pathway_associations",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -4248,7 +4248,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "rare_variant_association_pathways",
+            "sms:displayName": "rare_variant_pathway_associations",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -4311,7 +4311,7 @@
             "rdfs:label": "pathway",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -4328,7 +4328,7 @@
             "rdfs:label": "q1",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -4347,7 +4347,7 @@
             "rdfs:label": "q2",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -4366,7 +4366,7 @@
             "rdfs:label": "q3",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -4942,7 +4942,7 @@
                     "@id": "bts:publications_to_genes_to_gene_sets"
                 },
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 },
                 {
                     "@id": "bts:samples"
@@ -5217,7 +5217,7 @@
                     "@id": "bts:heritability_results"
                 },
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5318,7 +5318,7 @@
                     "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5337,7 +5337,7 @@
             "rdfs:label": "n_total",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5432,7 +5432,7 @@
             "rdfs:label": "mean",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5451,7 +5451,7 @@
             "rdfs:label": "min",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5470,7 +5470,7 @@
             "rdfs:label": "max",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5510,7 +5510,7 @@
                     "@id": "bts:heritability_results"
                 },
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
@@ -5761,7 +5761,7 @@
                     "@id": "bts:nodes"
                 },
                 {
-                    "@id": "bts:rare_variant_association_pathways"
+                    "@id": "bts:rare_variant_pathway_associations"
                 }
             ],
             "schema:isPartOf": {
