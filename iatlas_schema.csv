@@ -71,11 +71,12 @@ gender,,,,,,The gender of the patient,,,"female, male"
 height,,,,,num warning,The height of the patient,,,
 race,,,,,,The race of the patient,,,"white, black or african american, asian, native hawaiian or other pacific islander, american indian or alaska native"
 weight,,,,,num warning,The weight of the patient,,,
-publications,,"Component, name, pubmed_id, do_id, journal, first_author_last_name, year, link, id","name, pubmed_id, do_id, journal, first_author_last_name, year, link, id",,,A publication,,,
+publications,,"Component, title, pubmed_id, do_id, journal, first_author_last_name, year, link, id","title, pubmed_id, do_id, journal, first_author_last_name, year, link, id",,,A publication,,,
 do_id,,,,,,,,,
 pubmed_id,,,,,int warning,The pubmed id,,,
 journal,,,,,,The Jorunal name,,,
 first_author_last_name,,,,,,The first authors last name,,,
+title,,,,,,,,,
 publications_to_genes_to_gene_sets,"genes, gene_sets, publications","Component, gene_id, gene_set_id, publication_id, id","gene_id, gene_set_id, publication_id, id",,,,,,
 rare_variant_pathway_associations,"features, datasets","Component, feature_id, dataset_id, p_value, min, max, mean, n_mutant, n_total, pathway, q1, q2, q3, id","feature_id, dataset_id, p_value, min, max, mean, n_mutant, n_total, pathway, q1, q2, q3, id",,,,,,
 pathway,,,,,,,,,

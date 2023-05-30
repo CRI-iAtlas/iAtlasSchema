@@ -4094,7 +4094,7 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:name"
+                    "@id": "bts:title"
                 },
                 {
                     "@id": "bts:pubmed_id"
@@ -4187,6 +4187,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "first_author_last_name",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:title",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "title",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:publications"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "title",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5005,9 +5022,6 @@
                 },
                 {
                     "@id": "bts:patients"
-                },
-                {
-                    "@id": "bts:publications"
                 },
                 {
                     "@id": "bts:samples"
