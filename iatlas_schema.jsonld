@@ -3849,6 +3849,84 @@
             ]
         },
         {
+            "@id": "bts:neoantigens",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "neoantigens",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "neoantigens",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:patients"
+                },
+                {
+                    "@id": "bts:genes"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:patient_id"
+                },
+                {
+                    "@id": "bts:neoantigen_gene_id"
+                },
+                {
+                    "@id": "bts:tpm"
+                },
+                {
+                    "@id": "bts:pmhc"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:neoantigen_gene_id",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "neoantigen_gene_id",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:neoantigens"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "neoantigen_gene_id",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "matchAtLeastOne genes.id set error"
+            ]
+        },
+        {
+            "@id": "bts:pmhc",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "pmhc",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:neoantigens"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "pmhc",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:nodes_to_tags",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -5323,22 +5401,19 @@
             ]
         },
         {
-            "@id": "bts:n_mutant",
-            "@type": "rdf:Property",
+            "@id": "bts:n_mutants",
+            "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "n_mutant",
-            "schema:domainIncludes": [
+            "rdfs:label": "n_mutants",
+            "rdfs:subClassOf": [
                 {
-                    "@id": "bts:driver_results"
-                },
-                {
-                    "@id": "bts:rare_variant_pathway_associations"
+                    "@id": "schema:Thing"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "n_mutant",
+            "sms:displayName": "n_mutants",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "num warning"
@@ -5497,6 +5572,25 @@
             ]
         },
         {
+            "@id": "bts:tpm",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "tpm",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:neoantigens"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "tpm",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "num warning"
+            ]
+        },
+        {
             "@id": "bts:feature_id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
@@ -5604,6 +5698,12 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "patient_id",
             "schema:domainIncludes": [
+                {
+                    "@id": "bts:neoantigens"
+                },
+                {
+                    "@id": "bts:neoantigens"
+                },
                 {
                     "@id": "bts:samples"
                 },
@@ -5858,6 +5958,175 @@
             "sms:validationRules": [
                 "matchAtLeastOne cohort.id set error"
             ]
+        },
+        {
+            "@id": "bts:n_mutant",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "n_mutant",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:d"
+                },
+                {
+                    "@id": "bts:r"
+                },
+                {
+                    "@id": "bts:i"
+                },
+                {
+                    "@id": "bts:v"
+                },
+                {
+                    "@id": "bts:e"
+                },
+                {
+                    "@id": "bts:r"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:r"
+                },
+                {
+                    "@id": "bts:e"
+                },
+                {
+                    "@id": "bts:s"
+                },
+                {
+                    "@id": "bts:u"
+                },
+                {
+                    "@id": "bts:l"
+                },
+                {
+                    "@id": "bts:t"
+                },
+                {
+                    "@id": "bts:s"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "n_mutant",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:n_mutant",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "n_mutant",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:r"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:r"
+                },
+                {
+                    "@id": "bts:e"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:v"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:r"
+                },
+                {
+                    "@id": "bts:i"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:n"
+                },
+                {
+                    "@id": "bts:t"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:p"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:t"
+                },
+                {
+                    "@id": "bts:h"
+                },
+                {
+                    "@id": "bts:w"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:y"
+                },
+                {
+                    "@id": "bts:_"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:s"
+                },
+                {
+                    "@id": "bts:s"
+                },
+                {
+                    "@id": "bts:o"
+                },
+                {
+                    "@id": "bts:c"
+                },
+                {
+                    "@id": "bts:i"
+                },
+                {
+                    "@id": "bts:a"
+                },
+                {
+                    "@id": "bts:t"
+                },
+                {
+                    "@id": "bts:i"
+                },
+                {
+                    "@id": "bts:o"
+                },
+                {
+                    "@id": "bts:n"
+                },
+                {
+                    "@id": "bts:s"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "n_mutant",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         },
         {
             "@id": "bts:sQTL",
