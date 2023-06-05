@@ -3876,6 +3876,9 @@
                     "@id": "bts:Component"
                 },
                 {
+                    "@id": "bts:id"
+                },
+                {
                     "@id": "bts:patient_id"
                 },
                 {
@@ -5023,6 +5026,9 @@
                 },
                 {
                     "@id": "bts:nodes"
+                },
+                {
+                    "@id": "bts:neoantigens"
                 },
                 {
                     "@id": "bts:nodes_to_tags"
