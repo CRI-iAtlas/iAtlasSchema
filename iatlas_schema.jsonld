@@ -2185,6 +2185,9 @@
                 },
                 {
                     "@id": "bts:samples"
+                },
+                {
+                    "@id": "bts:tags"
                 }
             ],
             "sms:requiresDependency": [
@@ -2198,10 +2201,32 @@
                     "@id": "bts:sample_id"
                 },
                 {
+                    "@id": "bts:cohorts_to_samples_tag_id"
+                },
+                {
                     "@id": "bts:id"
                 }
             ],
             "sms:validationRules": []
+        },
+        {
+            "@id": "bts:cohorts_to_samples_tag_id",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "cohorts_to_samples_tag_id",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:cohorts_to_samples"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "cohorts_to_samples_tag_id",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "matchAtLeastOne tags.id set error"
+            ]
         },
         {
             "@id": "bts:cohorts_to_tags",
