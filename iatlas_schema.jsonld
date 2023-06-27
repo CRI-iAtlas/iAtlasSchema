@@ -3926,6 +3926,9 @@
                 },
                 {
                     "@id": "bts:pmhc"
+                },
+                {
+                    "@id": "bts:freq_pmhc"
                 }
             ],
             "sms:validationRules": []
@@ -3965,6 +3968,25 @@
             "sms:displayName": "pmhc",
             "sms:required": "sms:true",
             "sms:validationRules": []
+        },
+        {
+            "@id": "bts:freq_pmhc",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "freq_pmhc",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:neoantigens"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "freq_pmhc",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "int warning"
+            ]
         },
         {
             "@id": "bts:nodes_to_tags",
@@ -5753,9 +5775,6 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "patient_id",
             "schema:domainIncludes": [
-                {
-                    "@id": "bts:neoantigens"
-                },
                 {
                     "@id": "bts:neoantigens"
                 },
