@@ -58,7 +58,7 @@ cluster,,,,,,,,,
 mutation_types,,"Component, name, display, id","name, display, id",,,,,,
 mutations,"genes, mutation_types","Component, name, gene_id, mutation_type_id, mutation_code, id","gene_id, name, mutation_type_id, mutation_code, id",,,A gene mutation,,,
 mutation_code,,,,TRUE,,,,,
-nodes,"genes, features, datasets","Component, name, label, score, x, y, node_gene_id, node_feature_id, dataset_id, network, id","name, label, score, x, y, node_gene_id, node_feature_id, dataset_id, network, id",,,,,,
+nodes,"genes, features, datasets","Component, name, label, score, x, y, node_gene_id, node_feature_id, dataset_id, network, id, tag_1_id, tag_2_id","name, label, score, x, y, node_gene_id, node_feature_id, dataset_id, network, id, tag_1_id, tag_2_id",,,,,,
 x,,,,,num warning,,,,
 y,,,,,num warning,,,,
 network,,,,TRUE,,,,,"Extracellular Network, Cellimage Network"

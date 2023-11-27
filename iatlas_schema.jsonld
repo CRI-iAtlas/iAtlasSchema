@@ -3780,6 +3780,12 @@
                 },
                 {
                     "@id": "bts:id"
+                },
+                {
+                    "@id": "bts:tag_1_id"
+                },
+                {
+                    "@id": "bts:tag_2_id"
                 }
             ],
             "sms:validationRules": []
@@ -3887,12 +3893,12 @@
         },
         {
             "@id": "bts:tag_1_id",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "tag_1_id",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
@@ -3906,12 +3912,12 @@
         },
         {
             "@id": "bts:tag_2_id",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "tag_2_id",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "schema:Thing"
+                    "@id": "bts:nodes"
                 }
             ],
             "schema:isPartOf": {
