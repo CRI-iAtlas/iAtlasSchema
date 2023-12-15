@@ -3780,6 +3780,12 @@
                 },
                 {
                     "@id": "bts:id"
+                },
+                {
+                    "@id": "bts:tag_1_id"
+                },
+                {
+                    "@id": "bts:tag_2_id"
                 }
             ],
             "sms:validationRules": []
@@ -3886,6 +3892,44 @@
             ]
         },
         {
+            "@id": "bts:tag_1_id",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "tag_1_id",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:nodes"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "tag_1_id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "matchAtLeastOne tags.id set error"
+            ]
+        },
+        {
+            "@id": "bts:tag_2_id",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "tag_2_id",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:nodes"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "tag_2_id",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "matchAtLeastOne tags.id set error"
+            ]
+        },
+        {
             "@id": "bts:neoantigens",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -3987,45 +4031,6 @@
             "sms:validationRules": [
                 "int warning"
             ]
-        },
-        {
-            "@id": "bts:nodes_to_tags",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "nodes_to_tags",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "nodes_to_tags",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:nodes"
-                },
-                {
-                    "@id": "bts:tags"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:node_id"
-                },
-                {
-                    "@id": "bts:tag_id"
-                },
-                {
-                    "@id": "bts:id"
-                }
-            ],
-            "sms:validationRules": []
         },
         {
             "@id": "bts:patients",
@@ -5093,9 +5098,6 @@
                     "@id": "bts:neoantigens"
                 },
                 {
-                    "@id": "bts:nodes_to_tags"
-                },
-                {
                     "@id": "bts:patients"
                 },
                 {
@@ -5894,9 +5896,6 @@
                     "@id": "bts:driver_results"
                 },
                 {
-                    "@id": "bts:nodes_to_tags"
-                },
-                {
                     "@id": "bts:samples_to_tags"
                 },
                 {
@@ -5963,12 +5962,12 @@
         },
         {
             "@id": "bts:node_id",
-            "@type": "rdf:Property",
+            "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
             "rdfs:label": "node_id",
-            "schema:domainIncludes": [
+            "rdfs:subClassOf": [
                 {
-                    "@id": "bts:nodes_to_tags"
+                    "@id": "schema:Thing"
                 }
             ],
             "schema:isPartOf": {
