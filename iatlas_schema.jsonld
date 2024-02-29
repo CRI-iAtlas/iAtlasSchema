@@ -74,6 +74,9 @@
                     "@id": "bts:cells_to_genes"
                 },
                 {
+                    "@id": "bts:cells_to_samples"
+                },
+                {
                     "@id": "bts:cohorts"
                 },
                 {
@@ -814,6 +817,9 @@
             "sms:requiresDependency": [
                 {
                     "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:id"
                 },
                 {
                     "@id": "bts:cell_id"
