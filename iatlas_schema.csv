@@ -102,7 +102,7 @@ samples,patients,"Component, name, patient_id, id","id, name, patient_id",,,A pa
 samples_to_mutations,"samples, mutations","Component, sample_id, mutation_id, mutation_status, id","sample_id, mutation_id, mutation_status, id",,,,,,
 mutation_status,,,,TRUE,,The status of the mutation for the sample,,,"Wt, Mut"
 samples_to_tags,"samples, tags","Component, sample_id, tag_id, id","sample_id, tag_id, id",,,,,,
-single_cell_pseudobulk,"samples, genes","Component, id, sample_id, cell_type, gene_id, single_cell_seq","id, sample_id, cell_type, feature_id, single_cell_seq",,,,,,
+single_cell_pseudobulk,"samples, genes","Component, id, sample_id, cell_type, gene_id, single_cell_seq","id, sample_id, cell_type, gene_id, single_cell_seq",,,,,,
 single_cell_pseudobulk_features,"samples, features","Component, id, sample_id, cell_type, feature_id, value","id, sample_id, cell_type, feature_id, value",,,,,,
 value,,,,TRUE,num warning,,,,
 slides,patients,"Component, name, display, description, patient_id, id","name, display, description, patient_id, id",,,A physical slide,,,

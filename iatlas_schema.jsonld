@@ -417,6 +417,9 @@
                 },
                 {
                     "@id": "bts:publications_to_genes_to_gene_sets"
+                },
+                {
+                    "@id": "bts:single_cell_pseudobulk"
                 }
             ],
             "schema:isPartOf": {
@@ -559,9 +562,6 @@
                 },
                 {
                     "@id": "bts:rare_variant_pathway_associations"
-                },
-                {
-                    "@id": "bts:single_cell_pseudobulk"
                 },
                 {
                     "@id": "bts:single_cell_pseudobulk_features"
