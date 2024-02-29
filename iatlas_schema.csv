@@ -12,7 +12,7 @@ cells_to_samples,"cells, samples","Component, id, cell_id, sample_id","id, cell_
 cohorts,"datasets, tags","Component, dataset_id, cohort_tag_id, id","name, dataset_id, cohort_tag_id, id",,,,,,
 cohort_tag_id,,,,,matchAtLeastOne tags.id set error,,,,
 cohorts_to_features,"cohorts, features","Component, cohort_id, feature_id, id","cohort_id, feature_id, id",,,,,,
-cohorts_to_genes,"cohorts, genes","Component, cell_id, gene_id, id","cell_id, gene_id, id",,,,,,
+cohorts_to_genes,"cohorts, genes","Component, cohort_id, gene_id, id","cohort_id, gene_id, id",,,,,,
 cohorts_to_mutations,"cohorts, mutations","Component, cohort_id, mutation_id, id","cohort_id, mutation_id, id",,,,,,
 cohorts_to_samples,"cohorts, samples, tags","Component, cohort_id, sample_id, cohorts_to_samples_tag_id, id","cohort_id, sample_id, cohorts_to_samples_tag_id, id",,,,,,
 cohorts_to_samples_tag_id,,,,,matchAtLeastOne tags.id set error,,,,
