@@ -308,6 +308,14 @@
             },
             "sms:displayName": "cell_stats",
             "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:datasets"
+                },
+                {
+                    "@id": "bts:genes"
+                }
+            ],
             "sms:requiresDependency": [
                 {
                     "@id": "bts:Component"
@@ -487,6 +495,98 @@
             "sms:validationRules": [
                 "num warning"
             ]
+        },
+        {
+            "@id": "bts:datasets",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "datasets",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "datasets",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:name"
+                },
+                {
+                    "@id": "bts:display"
+                },
+                {
+                    "@id": "bts:dataset_type"
+                },
+                {
+                    "@id": "bts:id"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:genes",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A gene",
+            "rdfs:label": "genes",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "genes",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:entrez_id"
+                },
+                {
+                    "@id": "bts:hgnc_id"
+                },
+                {
+                    "@id": "bts:gene_family"
+                },
+                {
+                    "@id": "bts:gene_function"
+                },
+                {
+                    "@id": "bts:immune_checkpoint"
+                },
+                {
+                    "@id": "bts:gene_pathway"
+                },
+                {
+                    "@id": "bts:super_category"
+                },
+                {
+                    "@id": "bts:therapy_type"
+                },
+                {
+                    "@id": "bts:description"
+                },
+                {
+                    "@id": "bts:io_landscape_name"
+                },
+                {
+                    "@id": "bts:friendly_name"
+                },
+                {
+                    "@id": "bts:id"
+                }
+            ],
+            "sms:validationRules": []
         },
         {
             "@id": "bts:cells_to_features",
@@ -737,64 +837,6 @@
             ]
         },
         {
-            "@id": "bts:genes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "A gene",
-            "rdfs:label": "genes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "genes",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:entrez_id"
-                },
-                {
-                    "@id": "bts:hgnc_id"
-                },
-                {
-                    "@id": "bts:gene_family"
-                },
-                {
-                    "@id": "bts:gene_function"
-                },
-                {
-                    "@id": "bts:immune_checkpoint"
-                },
-                {
-                    "@id": "bts:gene_pathway"
-                },
-                {
-                    "@id": "bts:super_category"
-                },
-                {
-                    "@id": "bts:therapy_type"
-                },
-                {
-                    "@id": "bts:description"
-                },
-                {
-                    "@id": "bts:io_landscape_name"
-                },
-                {
-                    "@id": "bts:friendly_name"
-                },
-                {
-                    "@id": "bts:id"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:cells_to_samples",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -969,40 +1011,6 @@
             "sms:validationRules": [
                 "matchAtLeastOne tags.id set error"
             ]
-        },
-        {
-            "@id": "bts:datasets",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "datasets",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "datasets",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:name"
-                },
-                {
-                    "@id": "bts:display"
-                },
-                {
-                    "@id": "bts:dataset_type"
-                },
-                {
-                    "@id": "bts:id"
-                }
-            ],
-            "sms:validationRules": []
         },
         {
             "@id": "bts:tags",

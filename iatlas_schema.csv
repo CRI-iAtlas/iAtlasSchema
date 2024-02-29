@@ -1,7 +1,7 @@
 Attribute,DependsOn Component,DependsOn,Properties,Required,Validation Rules,Description,Parent,Source,Valid Values
 Component,,,,TRUE,,Type of submitted information.,,,
 cells,,"Component, id, name, cell_type","id, name, cell_type",,,,,,
-cell_stats,,"Component, id, dataset_id, gene_id, cell_type, cell_count, avg_expr, perc_expr","id, dataset_id, gene_id, cell_type, cell_count, avg_expr, perc_expr",,,,,,
+cell_stats,"datasets, genes","Component, id, dataset_id, gene_id, cell_type, cell_count, avg_expr, perc_expr","id, dataset_id, gene_id, cell_type, cell_count, avg_expr, perc_expr",,,,,,
 cell_count,,,,,int warning,,,,
 avg_expr,,,,,num warning,,,,
 perc_expr,,,,,num warning,,,,
