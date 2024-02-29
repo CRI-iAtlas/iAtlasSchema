@@ -395,9 +395,6 @@
                     "@id": "bts:cells_to_genes"
                 },
                 {
-                    "@id": "bts:cells_to_samples"
-                },
-                {
                     "@id": "bts:cohorts_to_genes"
                 },
                 {
@@ -587,6 +584,9 @@
                 },
                 {
                     "@id": "bts:cells_to_genes"
+                },
+                {
+                    "@id": "bts:cells_to_samples"
                 }
             ],
             "schema:isPartOf": {
@@ -816,7 +816,7 @@
                     "@id": "bts:Component"
                 },
                 {
-                    "@id": "bts:gene_id"
+                    "@id": "bts:cell_id"
                 },
                 {
                     "@id": "bts:sample_id"
