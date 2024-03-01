@@ -819,19 +819,14 @@
             "schema:domainIncludes": [
                 {
                     "@id": "bts:cells_to_genes"
-                },
-                {
-                    "@id": "bts:single_cell_pseudobulk"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "single_cell_seq",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "num warning"
-            ]
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         },
         {
             "@id": "bts:cells_to_samples",
@@ -4724,10 +4719,29 @@
                     "@id": "bts:gene_id"
                 },
                 {
-                    "@id": "bts:single_cell_seq"
+                    "@id": "bts:single_cell_seq_sum"
                 }
             ],
             "sms:validationRules": []
+        },
+        {
+            "@id": "bts:single_cell_seq_sum",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "single_cell_seq_sum",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:single_cell_pseudobulk"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "single_cell_seq_sum",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "num warning"
+            ]
         },
         {
             "@id": "bts:single_cell_pseudobulk_features",
