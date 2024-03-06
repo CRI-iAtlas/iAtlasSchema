@@ -625,7 +625,7 @@
                     "@id": "bts:cell_id"
                 },
                 {
-                    "@id": "bts:feature_to_cell_value"
+                    "@id": "bts:feature_value"
                 }
             ],
             "sms:validationRules": []
@@ -702,10 +702,10 @@
             ]
         },
         {
-            "@id": "bts:feature_to_cell_value",
+            "@id": "bts:feature_value",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "feature_to_cell_value",
+            "rdfs:label": "feature_value",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:cells_to_features"
@@ -714,7 +714,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "feature_to_cell_value",
+            "sms:displayName": "feature_value",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "num warning"
